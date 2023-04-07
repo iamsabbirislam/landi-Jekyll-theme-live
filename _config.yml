@@ -12,7 +12,7 @@ description: Landscape Gardening Jekyll Theme.
 url: 'iamsabbirislam.github.io'
 
 # Site subpath, e.g. /blog
-baseurl: "/"
+baseurl: "/landi-Jekyll-theme-live/"
 
 # Number of posts displayed on blog page
 paginate: 7
