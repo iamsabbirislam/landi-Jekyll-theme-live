@@ -1,0 +1,35 @@
+{% assign appointment_one = site.data.appointment['appointment_one'] %}
+{% assign form = site.data.form['form'] %}
+<div class="book-appointment">
+    <div class="book-appointment-img bg-property" data-background="{{ appointment_one.section.image | reletive_url }}"></div>
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-6 col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-sm-12">
+                <div class="book-quote-form ml-65 pt-70 pb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="section-title mb-70">
+                        <span>{{ appointment_one.section.heading }}</span>
+                        <h2>{{ appointment_one.section.description }}</h2>
+                    </div>
+                    <form action="{{ form.query_form }}" method="POST">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <input id="name" name="name" type="text" placeholder="Name">
+                            </div>
+                            <div class="col-xl-6">
+                                <input id="email" name="email" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input id="phone" name="phone" type="text" placeholder="Phone">
+                                <textarea id="message" name="message" placeholder="Write Message Here"></textarea>
+                            </div>
+                        </div>
+                        <button class="l-btn quote-btn" type="submit">Send Your Query<i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

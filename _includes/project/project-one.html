@@ -1,0 +1,61 @@
+{% assign project_one = site.data.project['project_one'] %}
+<div class="project-area pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ project_one.section.heading }}</span>
+                    <h2>{{ project_one.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-60">
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-project-img bg-property bg-hover-style-1" data-background="{{ project_one.project1.image | relative_url }}">
+                        <div class="single-project-img-icon">
+                            <a href="{{ project_one.project1.link | relative_url }}"><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-project-content">
+                        <h3>{{ project_one.project1.heading }}</h3>
+                        <p>{{ project_one.project1.description }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-project-img bg-property bg-hover-style-1" data-background="{{ project_one.project2.image | relative_url }}">
+                        <div class="single-project-img-icon">
+                            <a href="{{ project_one.project2.link | relative_url }}"><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-project-content">
+                        <h3>{{ project_one.project2.heading }}</h3>
+                        <p>{{ project_one.project2.description }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-project-img bg-property bg-hover-style-1" data-background="{{ project_one.project3.image | relative_url }}">
+                        <div class="single-project-img-icon">
+                            <a href="{{ project_one.project3.link | relative_url }}"><i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-project-content">
+                        <h3>{{ project_one.project3.heading }}</h3>
+                        <p>{{ project_one.project3.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="project-btn text-center wow fadeInUp" data-wow-delay=".3s">
+                    <a href="{{ project_one.section.button.link | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ project_one.section.button.label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

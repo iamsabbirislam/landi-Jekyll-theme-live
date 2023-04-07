@@ -1,0 +1,30 @@
+{% assign author = site.authors[page.author] %}
+<div class="row mt-95 wow fadeInUp" data-wow-delay=".3s">
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+        {% if author.gravatar %}
+        <div class="post-author-avatar pl-30">
+            <img class="img-fluid" src="{{ author.gravatar | relative_url }}" alt="{{ author.name }}">
+        </div>
+        {% endif %}
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+        <div class="post-author-bio">
+            <h5><a href="#">{{ author.name }}</a></h5>
+            {% if author.bio %}
+                <p>{{ author.bio }}</p>
+            {% endif %}
+
+            {% if author.facebook %}
+                <a href="{{ author.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            {% endif %}
+
+            {% if author.twitter %}
+                <a href="{{ author.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+            {% endif %}
+
+            {% if author.pinterest %}
+                <a href="{{ author.pinterest }}" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{% assign fun_fact_one = site.data.funfact['fun_fact_one'] %}
+<div class="fun-fact-area pt-60 pb-60 theme-bg-1">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="single-counter text-center wow fadeInUp" data-wow-delay=".3s">
+                    <h2><span class="counter">{{ fun_fact_one.column1.number }}</span>{{ fun_fact_one.column1.percent }}</h2>
+                    <p>{{ fun_fact_one.column1.heading }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="single-counter text-center wow fadeInUp" data-wow-delay=".5s">
+                    <h2><span class="counter">{{ fun_fact_one.column2.number }}</span>{{ fun_fact_one.column2.percent }}</h2>
+                    <p>{{ fun_fact_one.column2.heading }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="single-counter text-center wow fadeInUp" data-wow-delay=".7s">
+                    <h2><span class="counter">{{ fun_fact_one.column3.number }}</span>{{ fun_fact_one.column3.percent }}</h2>
+                    <p>{{ fun_fact_one.column3.heading }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="single-counter text-center wow fadeInUp" data-wow-delay=".9s">
+                    <h2><span class="counter">{{ fun_fact_one.column4.number }}</span>{{ fun_fact_one.column4.percent }}</h2>
+                    <p>{{ fun_fact_one.column4.heading }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

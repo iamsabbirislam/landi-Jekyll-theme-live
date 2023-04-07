@@ -1,0 +1,49 @@
+{% assign project_three = site.data.project['project_three'] %}
+<div class="project-area gray-bg-2 pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-9 col-lg-8 col-md-7 col-xm-12">
+                <div class="section-title mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ project_three.section.heading }}</span>
+                    <h2>{{ project_three.section.description }}</h2>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-xm-12 text-xl-end text-lg-end text-md-end text-sm-center">
+                <a href="{{ project_three.section.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ project_three.section.button.label }}</a>
+            </div>
+        </div>
+        <div class="row portfolio-active">
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ project_three.project1.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_three.project1.heading }}</h3>
+                            <p>{{ project_three.project1.description }}</p>
+                            <a href="{{ project_three.project1.button.url | relative_url }}">{{ project_three.project1.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ project_three.project2.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_three.project2.heading }}</h3>
+                            <p>{{ project_three.project2.description }}</p>
+                            <a href="{{ project_three.project2.button.url | relative_url }}">{{ project_three.project2.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ project_three.project3.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <h3>{{ project_three.project3.heading }}</h3>
+                        <p>{{ project_three.project3.description }}</p>
+                        <a href="{{ project_three.project3.button.url | relative_url }}">{{ project_three.project3.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+{% assign appointment_two = site.data.appointment['appointment_two'] %}
+{% assign form = site.data.form['form'] %}
+<div class="bg-property pt-110 pb-110" data-overlay="theme-1" data-opacity="7" data-background="{{ appointment_two.section.image | relative_url }}">
+    <div class="container custom-container-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="section-title quote-title mb-40 wow fadeInUp" data-wow-delay=".3s">
+                    <h2>{{ appointment_two.section.heading }}</h2>
+                    <p>{{ appointment_two.section.description }}</p>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12">
+                <div class="quote-area-form ml-110 mr-110 wow fadeInUp" data-wow-delay=".3s">
+                    <h3>{{ appointment_two.section.form_heading }}</h3>
+                    <form action="{{ form.query_form }}" method="POST">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <input id="name" name="name" type="text" placeholder="First Name">
+                            </div>
+                            <div class="col-xl-6">
+                                <input id="email" name="email" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <input id="phone" name="phone" type="text" placeholder="Phone">
+                                <textarea id="message" name="message" placeholder="Write Message here ..."></textarea>
+                                <button class="l-btn" type="submit">Send Your Query</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

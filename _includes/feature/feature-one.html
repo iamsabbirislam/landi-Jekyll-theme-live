@@ -1,0 +1,43 @@
+{% assign feature1 = site.data.feature['feature_one'] %}
+<div class="features-area bg-white pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-feature text-center box-shadow-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-feature-icon">
+                        <img src="{{ feature1.column1.icon | relative_url }}" alt="{{ feature1.column1.alt }}">
+                    </div>
+                    <h5>{{ feature1.column1.heading }}</h5>
+                    <p>{{ feature1.column1.description }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-feature text-center box-shadow-3 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-feature-icon">
+                        <img src="{{ feature1.column2.icon | relative_url }}" alt="{{ feature1.column2.alt }}">
+                    </div>
+                    <h5>{{ feature1.column2.heading }}</h5>
+                    <p>{{ feature1.column2.description }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-feature text-center box-shadow-3 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-feature-icon">
+                        <img src="{{ feature1.column3.icon | relative_url }}" alt="{{ feature1.column3.alt }}">
+                    </div>
+                    <h5>{{ feature1.column3.heading }}</h5>
+                    <p>{{ feature1.column3.description }}</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-feature text-center box-shadow-3 wow fadeInUp" data-wow-delay=".9s">
+                    <div class="single-feature-icon">
+                        <img src="{{ feature1.column4.icon | relative_url }}" alt="{{ feature1.column4.alt }}">
+                    </div>
+                    <h5>{{ feature1.column4.heading }}</h5>
+                    <p>{{ feature1.column4.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

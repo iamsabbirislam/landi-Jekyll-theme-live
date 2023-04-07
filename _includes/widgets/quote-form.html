@@ -1,0 +1,10 @@
+{% assign form = site.data.form['form'] %}
+<div class="widget quote-widget wow fadeInUp" data-wow-delay=".3s">
+    <h3 class="widget-title">Leave a Message</h3>
+    <form action="{{ form.query_form }}" method="POST">
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Email">
+        <textarea placeholder="Massage Details"></textarea>
+        <button>SEND MASSAGE <i class="fas fa-arrow-right"></i></button>
+    </form>
+</div>

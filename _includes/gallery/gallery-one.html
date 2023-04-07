@@ -1,0 +1,159 @@
+{% assign gallery_one = site.data.gallery['gallery_one'] %}
+<div class="project-area pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ gallery_one.section.heading }}</span>
+                    <h2>{{ gallery_one.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="portfolio-menu mb-60 wow fadeInUp" data-wow-delay=".3s">
+                    <button class="active" data-filter="*">{{ gallery_one.filter.filter1.label }}</button>
+                    <button data-filter=".{{ gallery_one.filter.filter2.tag }}">{{ gallery_one.filter.filter2.label }}</button>
+                    <button data-filter=".{{ gallery_one.filter.filter3.tag }}">{{ gallery_one.filter.filter3.label }}</button>
+                    <button data-filter=".{{ gallery_one.filter.filter4.tag }}">{{ gallery_one.filter.filter4.label }}</button>
+                    <button data-filter=".{{ gallery_one.filter.filter5.tag }}">{{ gallery_one.filter.filter5.label }}</button>
+                    <button data-filter=".{{ gallery_one.filter.filter6.tag }}">{{ gallery_one.filter.filter6.label }}</button>
+                </div>
+            </div>
+        </div>
+        <div class="row portfolio-active">
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter5.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ gallery_one.gallery1.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery1.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery1.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery1.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter2.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ gallery_one.gallery2.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery2.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery2.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery2.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter3.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ gallery_one.gallery3.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery3.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery3.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery3.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter5.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ gallery_one.gallery4.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery4.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery4.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery4.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter2.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ gallery_one.gallery5.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery5.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery5.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery5.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter2.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ gallery_one.gallery6.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery6.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery6.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery6.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter3.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ gallery_one.gallery7.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery7.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery7.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery7.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter4.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ gallery_one.gallery8.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery8.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery8.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery8.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter4.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ gallery_one.gallery9.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery9.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery9.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery9.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter2.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ gallery_one.gallery10.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery10.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery10.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery10.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter6.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ gallery_one.gallery11.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery11.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery11.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery11.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 {{ gallery_one.filter.filter6.tag }}">
+                <div class="single-project-isotope-style-2 bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ gallery_one.gallery12.image | relative_url }}">
+                    <div class="portfolio-content-2">
+                        <a href="{{ gallery_one.gallery12.image | relative_url }}" class="popup-image"><i class="fas fa-search-plus"></i></a>
+                        <a href="{{ gallery_one.gallery12.url | relative_url }}"><i class="fas fa-link"></i></a>
+                    </div>
+                    <div class="portfolio-heading-content-2">
+                        <h3>{{ gallery_one.gallery12.heading }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

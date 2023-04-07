@@ -1,0 +1,29 @@
+{% assign hero_two = site.data.hero['hero_two'] %}
+<div class="hero-slider-1">
+    <div class="single-slider-style-1 height-800 bg-property d-flex align-items-center" data-background="{{ hero_two.slider1.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="slide-content-wrapper-1">
+                        <h1 data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider1.heading }}</h1>
+                        <p data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider1.description }}</p>
+                        <a href="{{ hero_two.slider1.button.url | reletive_url }}" class="l-btn cmk-button cmk-rotate-right" data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider1.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slider-style-1 height-800 bg-property d-flex align-items-center" data-background="{{ hero_two.slider2.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="slide-content-wrapper-1">
+                        <h1 data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider2.heading }}</h1>
+                        <p data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider2.description }}</p>
+                        <a href="{{ hero_two.slider2.button.url | reletive_url }}" class="l-btn cmk-button cmk-rotate-right" data-animation="fadeInUp" data-delay=".6s">{{ hero_two.slider2.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

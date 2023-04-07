@@ -1,0 +1,42 @@
+{% assign about_three = site.data.about['about_three'] %}
+<div class="about-area gray-bg-2 pt-200 pb-160">
+    <div class="container custom-container-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 pl-50 pr-50">
+                <div class="about-img-style-2 wow fadeInUp" data-wow-delay=".3s">
+                    <img src="{{ about_three.column1.image1 | relative_url }}" alt="{{ about_three.column1.alt1 }}">
+                    <div class="about-small-img">
+                        <img src="{{ about_three.column1.image2 | relative_url }}" alt="{{ about_three.column1.alt2 }}">
+                    </div>
+                    <div class="about-experience">
+                        <h2>{{ about_three.column1.subheading }}</h2>
+                        <span>{{ about_three.column1.heading }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-text-wrapper wow fadeInUp" data-wow-delay=".3s">
+                    <div class="section-title mr-100 mb-40">
+                        <span>{{ about_three.column2.subheading }}</span>
+                        <h2 class="mb-30">{{ about_three.column2.heading }}</h2>
+                        <p>{{ about_three.column2.description }}</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-12">
+                            <a href="{{ about_three.column2.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ about_three.column2.button.label }}</a>
+                        </div>
+                        <div class="col-xl-7 col-lg-12">
+                            <div class="about-author-avatar-wrapper d-flex align-items-center">
+                                <img src="{{ about_three.column2.author.image | relative_url }}" alt="{{ about_three.column2.author.alt }}">
+                                <div class="about-author-avatar-content">
+                                    <h5>{{ about_three.column2.author.name }}</h5>
+                                    <span>{{ about_three.column2.author.position }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

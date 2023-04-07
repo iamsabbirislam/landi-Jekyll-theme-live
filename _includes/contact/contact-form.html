@@ -1,0 +1,54 @@
+{% assign contact_one = site.data.contact['contact_one'] %}
+{% assign form = site.data.form['form'] %}
+<!-- Contact Form Start -->
+<div class="contact-area white-bg pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="box-shadow-3 pt-60 pb-60 pl-80 pr-80 wow fadeInUp" data-wow-delay=".3s">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact-form pr-70">
+                        <div class="section-title mb-40">
+                            <span>{{ contact_one.section.heading }}</span>
+                            <h2>{{ contact_one.section.description }}</h2>
+                        </div>
+                        <form action="{{ form.contact_form }}" method="POST">
+                            <input id="name" type="text" name="name" placeholder="Your Name">
+                            <input id="email" type="email" name="email" placeholder="Your Email">
+                            <input id="subject" type="text" name="subject" placeholder="Your Subject">
+                            <textarea id="message" name="message" placeholder="Write Message Here"></textarea>
+                            <button class="l-btn" type="submit">Send Message <i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact-box theme-bg-1 pt-60 pb-35 pl-35 pr-35 mr-40">
+                        <span>{{ contact_one.column2.subheading }}</span>
+                        <h3>{{ contact_one.column2.heading }}</h3>
+                        <p>{{ contact_one.column2.description }}</p>
+                        <ul class="mt-40">
+                            <li><i class="fas fa-headphones"></i><span>Emergency Line: <a href="tel:{{ contact_one.column2.number.url }}">{{ contact_one.column2.number.label }}</a></span></li>
+                            <li><i class="fas fa-envelope-open"></i><span>Your Email: <a href="mailto:{{ contact_one.column2.email.url }}">{{ contact_one.column2.email.label }}</a></span></li>
+                            <li><i class="fas fa-map-marker-alt"></i><span>{{ contact_one.column2.location }}</span></li>
+                            <li><i class="fas fa-clock"></i><span>{{ contact_one.column2.open_hours }}</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Form End -->
+
+<!-- Social BTN Start -->
+<div class="social-btn-area pb-110 wow fadeInUp" data-wow-delay=".3s">
+    <div class="container custom-container-1">
+        <div class="row">
+            {% for social in contact_one.social %}
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <a href="{{ social.url }}" class="l-btn cmk-button cmk-rotate-right">{{ social.label }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Social BTN End -->

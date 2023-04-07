@@ -1,0 +1,75 @@
+{% assign service_three = site.data.service['service_three'] %}
+<div class="service-area gray-bg-2 pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ service_three.section.heading }}</span>
+                    <h2>{{ service_three.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service1.icon | relative_url }}" alt="{{ service_three.service1.alt }}">
+                    </div>
+                    <h3>{{ service_three.service1.heading }}</h3>
+                    <p>{{ service_three.service1.description }}</p>
+                    <a href="{{ service_three.service1.button.url | relative_url }}">{{ service_three.service1.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service2.icon | relative_url }}" alt="{{ service_three.service2.alt }}">
+                    </div>
+                    <h3>{{ service_three.service2.heading }}</h3>
+                    <p>{{ service_three.service2.description }}</p>
+                    <a href="{{ service_three.service2.button.url | relative_url }}">{{ service_three.service2.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service3.icon | relative_url }}" alt="{{ service_three.service3.alt }}">
+                    </div>
+                    <h3>{{ service_three.service3.heading }}</h3>
+                    <p>{{ service_three.service3.description }}</p>
+                    <a href="{{ service_three.service3.button.url | relative_url }}">{{ service_three.service3.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".5s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service4.icon | relative_url }}" alt="{{ service_three.service4.alt }}">
+                    </div>
+                    <h3>{{ service_three.service4.heading }}</h3>
+                    <p>{{ service_three.service4.description }}</p>
+                    <a href="{{ service_three.service4.button.url | relative_url }}">{{ service_three.service4.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".5s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service5.icon | relative_url }}" alt="{{ service_three.service5.alt }}">
+                    </div>
+                    <h3>{{ service_three.service5.heading }}</h3>
+                    <p>{{ service_three.service5.description }}</p>
+                    <a href="{{ service_three.service5.button.url | relative_url }}">{{ service_three.service5.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-service box-shadow-1 text-center wow fadeInUp" data-wow-delay=".5s">
+                    <div class="service-icon ml-5">
+                        <img src="{{ service_three.service6.icon | relative_url }}" alt="{{ service_three.service6.alt }}">
+                    </div>
+                    <h3>{{ service_three.service6.heading }}</h3>
+                    <p>{{ service_three.service6.description }}</p>
+                    <a href="{{ service_three.service6.button.url | relative_url }}">{{ service_three.service6.button.label }} <span class="service-readmore-icon"><i class="fas fa-angle-double-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

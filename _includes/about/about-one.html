@@ -1,0 +1,22 @@
+{% assign about = site.data.about['about_one'] %}
+<div class="about-area white-bg pt-105 pb-105">
+    <div class="container custom-container-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-text-wrapper mb-30">
+                    <div class="section-title mr-30 mb-40 wow fadeInUp" data-wow-delay=".3s">
+                        <span>{{ about.subheading }}</span>
+                        <h2>{{ about.heading }}</h2>
+                    </div>
+                    <a href="{{ about.button.link }}" class="l-btn cmk-button cmk-rotate-right">{{ about.button.label }}</a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-wrapper-style-1 mb-30 wow fadeInUp" data-wow-delay=".5s">
+                    <img src="{{ about.image1.image }}" alt="{{ about.image1.alt }}">
+                    <img class="about-secondary" src="{{ about.image2.image }}" alt="{{ about.image2.alt }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

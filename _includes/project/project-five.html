@@ -1,0 +1,122 @@
+{% assign project_five = site.data.project['project_five'] %}
+<div class="project-area pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ project_five.section.heading }}</span>
+                    <h2>{{ project_five.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="portfolio-menu mb-60 wow fadeInUp" data-wow-delay=".3s">
+                    <button class="active" data-filter="*">{{ project_five.filter.filter1.label }}</button>
+                    <button data-filter=".{{ project_five.filter.filter2.tag }}">{{ project_five.filter.filter2.label }}</button>
+                    <button data-filter=".{{ project_five.filter.filter3.tag }}">{{ project_five.filter.filter3.label }}</button>
+                    <button data-filter=".{{ project_five.filter.filter4.tag }}">{{ project_five.filter.filter4.label }}</button>
+                    <button data-filter=".{{ project_five.filter.filter5.tag }}">{{ project_five.filter.filter5.label }}</button>
+                    <button data-filter=".{{ project_five.filter.filter6.tag }}">{{ project_five.filter.filter6.label }}</button>
+                </div>
+            </div>
+        </div>
+        <div class="row portfolio-active">
+            <div class="col-xl-4 col-lg-4 col-md-4 planting">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ project_five.project1.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project1.heading }}"</h3>
+                            <p>{{ project_five.project1.description }}</p>
+                            <a href="{{ project_five.project1.button.url }}">{{ project_five.project1.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 lawn">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ project_five.project2.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project2.heading }}</h3>
+                            <p>{{ project_five.project2.description }}</p>
+                            <a href="{{ project_five.project2.button.url }}">{{ project_five.project2.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 video">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ project_five.project3.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <h3>{{ project_five.project3.heading }}</h3>
+                        <p>{{ project_five.project3.description }}</p>
+                        <a href="{{ project_five.project3.button.url }}">{{ project_five.project3.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 planting">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ project_five.project4.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project4.heading }}</h3>
+                            <p>{{ project_five.project4.description }}</p>
+                            <a href="{{ project_five.project3.button.url }}">{{ project_five.project4.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 lawn">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ project_five.project5.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <h3>{{ project_five.project5.heading }}</h3>
+                        <p>{{ project_five.project5.description }}</p>
+                        <a href="{{ project_five.project4.button.url }}">{{ project_five.project5.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 snow">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ project_five.project6.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project6.heading }}</h3>
+                            <p>{{ project_five.project6.description }}</p>
+                            <a href="{{ project_five.project5.button.url }}">{{ project_five.project6.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 video">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".3s" data-background="{{ project_five.project7.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project7.heading }}</h3>
+                            <p>{{ project_five.project7.description }}</p>
+                            <a href="{{ project_five.project7.button.url }}">{{ project_five.project7.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 garden">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".5s" data-background="{{ project_five.project8.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project8.heading }}</h3>
+                            <p>{{ project_five.project8.description }}</p>
+                            <a href="{{ project_five.project8.button.url }}">{{ project_five.project8.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 garden">
+                <div class="single-project-isotope bg-property mb-25 wow fadeInUp" data-wow-delay=".7s" data-background="{{ project_five.project9.image | relative_url }}">
+                    <div class="project-isotope-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3>{{ project_five.project9.heading }}</h3>
+                            <p>{{ project_five.project9.description }}</p>
+                            <a href="{{ project_five.project9.button.url }}">{{ project_five.project9.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

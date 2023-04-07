@@ -1,0 +1,24 @@
+<div class="col-xl-12">
+    <div class="single-blog-wrapper mb-60 border-bottom-1 wow fadeInUp" data-wow-delay=".3s">
+        {% if post.image %}
+        <div class="blog-img">
+            <img src="{{post.image | relative_url}}" class="img-fluid" alt="{{ post.title }}">
+            <a href="{{post.url | relative_url}}"><i class="fas fa-plus"></i></a>
+        </div>
+        {% endif %}
+        <div class="blog-content mb-60">
+            <ul class="cat-list mt-30 mb-20">
+                {% for category in site.categories %}
+                    <li><a href="#">{{ category[0] }}</a></li>
+                {% endfor %}
+            </ul>
+            <h2><a title="{{ post.title }}" href="{{post.url | relative_url}}">{{ post.title }}</a></h2>
+            <ul class="post-meta mb-25">
+                <li>{{ post.date | date: " %-d %B %Y" }}</li>
+                <li><span>By</span> <a href="#">{{ author.name }}</a></li>
+            </ul>
+            <p class="mb-35">{{ post.excerpt }}</p>
+            <a href="{{post.url | relative_url}}" class="l-btn cmk-button cmk-rotate-right">Read more</a>
+        </div>
+    </div>
+</div>

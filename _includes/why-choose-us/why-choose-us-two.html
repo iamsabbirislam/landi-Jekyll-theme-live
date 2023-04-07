@@ -1,0 +1,59 @@
+{% assign choose = site.data.whychooseus['why_choose_us_one'] %}
+<div class="why-choose-us-area bg-white pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row position-relative">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ choose.section.heading }}</span>
+                    <h2>{{ choose.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row position-relative">
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-choose-us wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-choose-us-content bb-1 b-color-2">
+                        <h3>{{ choose.why_choose_us1.heading }}</h3>
+                        <p>{{ choose.why_choose_us1.description }}</p>
+                    </div>
+                    <div class="single-choose-us-icon">
+                        <img src="{{ choose.why_choose_us1.icon | relative_url }}" alt="{{ choose.why_choose_us1.alt }}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-choose-us wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-choose-us-content bb-1 b-color-2">
+                        <h3>{{ choose.why_choose_us2.heading }}</h3>
+                        <p>{{ choose.why_choose_us2.description }}</p>
+                    </div>
+                    <div class="single-choose-us-icon">
+                        <img src="{{ choose.why_choose_us2.icon | relative_url }}" alt="{{ choose.why_choose_us1.alt }}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-choose-us wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-choose-us-content bb-1 b-color-2">
+                        <h3>{{ choose.why_choose_us3.heading }}</h3>
+                        <p>{{ choose.why_choose_us3.description }}</p>
+                    </div>
+                    <div class="single-choose-us-icon">
+                        <img src="{{ choose.why_choose_us3.icon | relative_url }}" alt="{{ choose.why_choose_us3.alt }}">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="single-choose-us wow fadeInUp" data-wow-delay=".9s">
+                    <div class="single-choose-us-content bb-1 b-color-2">
+                        <h3>{{ choose.why_choose_us4.heading }}</h3>
+                        <p>{{ choose.why_choose_us4.description }}</p>
+                    </div>
+                    <div class="single-choose-us-icon">
+                        <img src="{{ choose.why_choose_us4.icon | relative_url }}" alt="{{ choose.why_choose_us4.alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

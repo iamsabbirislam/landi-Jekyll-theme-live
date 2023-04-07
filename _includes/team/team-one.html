@@ -1,0 +1,57 @@
+{% assign team_one = site.data.team['team_one'] %}
+<div class="team-area white-bg pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ team_one.section.heading }}</span>
+                    <h2>{{ team_one.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-team-style-1 text-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-team-style-1-img">
+                        <img src="{{ team_one.team1.image | relative_url }}" alt="{{ team_one.team1.alt }}">
+                        <div class="team-social-style-1">
+                            {% for team_social in team_one.team1.social %}
+                            <a href="{{ team_social.url }}"><i class="{{ team_social.icon }}"></i></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <h4>{{ team_one.team1.name }}</h4>
+                    <span>{{ team_one.team1.position }}</span>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-team-style-1 text-center wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-team-style-1-img">
+                        <img src="{{ team_one.team2.image | relative_url }}" alt="{{ team_one.team2.alt }}">
+                        <div class="team-social-style-1">
+                            {% for team_social in team_one.team1.social %}
+                            <a href="{{ team_social.url }}"><i class="{{ team_social.icon }}"></i></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <h4>{{ team_one.team2.name }}</h4>
+                    <span>{{ team_one.team2.position }}</span>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single-team-style-1 text-center wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-team-style-1-img">
+                        <img src="{{ team_one.team3.image | relative_url }}" alt="{{ team_one.team3.alt }}">
+                        <div class="team-social-style-1">
+                            {% for team_social in team_one.team1.social %}
+                            <a href="{{ team_social.url }}"><i class="{{ team_social.icon }}"></i></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <h4>{{ team_one.team3.name }}</h4>
+                    <span>{{ team_one.team3.position }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

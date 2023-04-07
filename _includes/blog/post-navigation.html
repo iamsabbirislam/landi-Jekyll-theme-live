@@ -1,0 +1,12 @@
+<div class="row wow fadeInUp" data-wow-delay=".3s">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-xm-12">
+        {% if page.previous.url %}
+            <a href="{{page.previous.url}}" class="post-prev-btn"><i class="fas fa-arrow-left"></i>Previous Post</a>
+        {% endif %}
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-xm-12 text-end text-sm-left">
+        {% if page.next.url %}
+            <a href="{{page.next.url}}" class="post-next-btn">Previous Post<i class="fas fa-arrow-right"></i></a>
+        {% endif %}
+    </div>
+</div>

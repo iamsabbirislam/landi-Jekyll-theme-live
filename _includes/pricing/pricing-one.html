@@ -1,0 +1,83 @@
+{% assign pricing_one = site.data.pricing['pricing_one'] %}
+<div class="pricing-area bg-white pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="section-title mb-55 pr-100 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ pricing_one.section.subheading }}</span>
+                    <h2>{{ pricing_one.section.heading }}</h2>
+                    <p class="pt-20">{{ pricing_one.section.description }}</p>
+                </div>
+
+                <div class="single-pricing-box mb-30 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="row">
+                        <div class="col-xl-5 pr-0">
+                            <div class="theme-bg-1 box-shadow-1 pt-60 pb-60 pr-0 text-center">
+                                <h3>{{ pricing_one.pricing1.price }}</h3>
+                                <h4>{{ pricing_one.pricing1.heading }}</h4>
+                                <a href="{{ pricing_one.pricing1.button.url | relative_url }}">{{ pricing_one.pricing1.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 pl-0 pr-90">
+                            <div class="bg-white box-shadow-1 pt-30 pb-30 pl-35 pr-35">
+                                <ul>
+                                    {% for single_feature in pricing_one.pricing1.list %}
+                                    <li><i class="{{ single_feature.icon }}"></i>{{ single_feature.content }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="single-pricing-box mb-30 wow fadeInUp" data-wow-delay=".5s">
+                            <div class="row">
+                                <div class="col-xl-5 pr-0">
+                                    <div class="theme-bg-1 box-shadow-1 pt-60 pb-60 pr-0 text-center">
+                                        <h3>{{ pricing_one.pricing2.price }}</h3>
+                                        <h4>{{ pricing_one.pricing2.heading }}</h4>
+                                        <a href="{{ pricing_one.pricing2.url | relative_url }}">{{ pricing_one.pricing2.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 pl-0 pr-90">
+                                    <div class="bg-white box-shadow-1 pt-30 pb-30 pl-35 pr-35">
+                                        <ul>
+                                            {% for single_feature in pricing_one.pricing2.list %}
+                                            <li><i class="{{ single_feature.icon }}"></i>{{ single_feature.content }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="single-pricing-box wow fadeInUp" data-wow-delay=".7s">
+                            <div class="row">
+                                <div class="col-xl-5 pr-0">
+                                    <div class="theme-bg-1 box-shadow-1 pt-60 pb-60 pr-0 text-center">
+                                        <h3>{{ pricing_one.pricing3.price }}</h3>
+                                        <h4>{{ pricing_one.pricing3.heading }}</h4>
+                                        <a href="{{ pricing_one.pricing3.url | relative_url }}">{{ pricing_one.pricing3.button.label }} <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 pl-0 pr-90">
+                                    <div class="bg-white box-shadow-1 pt-30 pb-30 pl-35 pr-35">
+                                        <ul>
+                                            {% for single_feature in pricing_one.pricing3.list %}
+                                            <li><i class="{{ single_feature.icon }}"></i>{{ single_feature.content }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

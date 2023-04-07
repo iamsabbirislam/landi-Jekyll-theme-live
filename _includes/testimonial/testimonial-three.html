@@ -1,0 +1,37 @@
+{% assign testimonial_three = site.data.testimonial['testimonial_three'] %}
+<div class="contact-testimonial pt-110 pb-110 wow fadeInUp" data-wow-delay=".3s">
+    <div class="container custom-container-1">
+        <div class="row d-flex align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="testimonial-img-1 ml-50">
+                    <img src="{{ testimonial_three.column1.image | relative_url }}" alt="{{ testimonial_three.column1.alt }}">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <h2>{{ testimonial_three.column2.heading }}</h2>
+
+                <!-- Slider Start -->
+                <div class="testimonial-style-3">
+                    {% for comment in testimonial_three.column2.slider %}
+                    <div class="single-testimonial-style-3">
+                        <p>{{ comment.content }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Slider End -->
+
+                <!-- Slider Box Start -->
+                <div class="testimonial-style-3-navigator mt-40">
+                    {% for testimonial_author in testimonial_three.column2.slider_box %}
+                    <div class="single-testimonial-style-3-navigator">
+                        <img src="{{ testimonial_author.image | relative_url }}" alt="{{ testimonial_author.alt }}">
+                        <h5>{{ testimonial_author.name }}</h5>
+                        <span>{{ testimonial_author.profession }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Slider Box End -->
+            </div>
+        </div>
+    </div>
+</div>

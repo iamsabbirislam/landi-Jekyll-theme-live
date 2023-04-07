@@ -1,0 +1,15 @@
+{% assign cta_two = site.data.cta['cta_two'] %}
+<div class="cta-area theme-bg-1 pt-60 pb-60">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="cta-style-1-wrapper text-center wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ cta_two.subheading }}</span>
+                    <h2>{{ cta_two.heading }}</h2>
+                    <p>{{ cta_two.description }}</p>
+                    <a href="{{ cta_two.button.url | relative_url }}" class="l-btn">{{ cta_two.button.label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

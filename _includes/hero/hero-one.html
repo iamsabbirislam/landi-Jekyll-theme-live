@@ -1,0 +1,20 @@
+{% assign hero = site.data.hero['hero_one'] %}
+<div class="hero-area height-800 bg-property d-flex align-items-center" data-overlay="{{ hero.overlay_color }}" data-opacity="{{ hero.opacity }}" data-background="{{ hero.image1 | relative_url }}">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                <div class="hero-wrapper">
+                    <h1>{{ hero.heading }}</h1>
+                    <p>{{ hero.description }}</p>
+                    <a href="{{ hero.button.link }}" class="l-btn cmk-button cmk-rotate-right">{{ hero.button.label }}</a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                <div class="hero-popup-content">
+                    <img src="{{ hero.image2 | relative_url }}" alt="{{ hero.alt }}">
+                    <a class="play-btn pulse-effect popup-video" href="{{ hero.videolink }}"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

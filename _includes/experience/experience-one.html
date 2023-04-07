@@ -1,0 +1,39 @@
+{% assign experience_one = site.data.experience['experience_one'] %}
+<div class="experience-area pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ experience_one.section.heading }}</span>
+                    <h2>{{ experience_one.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-6 offset-xl-2 offset-lg-2 offset-md-2">
+                <div class="single-experience wow fadeInUp" data-wow-delay=".3s">
+                    <h4>{{ experience_one.column1.mission.heading }}</h4>
+                    <p>{{ experience_one.column1.mission.description }}</p>
+                </div>
+                <div class="single-experience wow fadeInUp" data-wow-delay=".6s">
+                    <h4>{{ experience_one.column1.vision.heading }}</h4>
+                    <p>{{ experience_one.column1.vision.description }}</p>
+                </div>
+                <div class="single-experience wow fadeInUp" data-wow-delay=".9s">
+                    <h4>{{ experience_one.column1.goal.heading }}</h4>
+                    <p>{{ experience_one.column1.goal.description }}</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-lg-6 pl-85 pr-0">
+                <div class="experience-img wow fadeInUp" data-wow-delay=".9s">
+                    <img src="{{ experience_one.column2.image | relative_url }}" alt="{{ experience_one.column2.alt }}">
+                    <div class="experience-small-block">
+                        <h5>{{ experience_one.column2.heading }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

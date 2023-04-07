@@ -1,0 +1,18 @@
+{% assign cta_four = site.data.cta['cta_four'] %}
+<div class="cta-style-3">
+    <div class="container custom-container-1">
+        <div class="cta-style-3-wrapper white-bg box-shadow-3 pt-60 pb-60 pl-35 pr-35 wow fadeInUp" data-wow-delay=".3s">
+            <div class="row">
+                <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12">
+                    <h3>{{ cta_four.heading }}</h3>
+                    <div class="cta-shape">
+                        <img src="{{ cta_four.image | relative_url }}" alt="{{ cta_four.alt }}">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 text-xl-end text-lg-end text-md-end text-sm-center">
+                    <a href="{{ cta_four.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ cta_four.button.label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

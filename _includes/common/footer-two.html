@@ -1,0 +1,93 @@
+{% assign footer_two = site.data.footer['footer_two'] %}
+{% assign footer_bottom = site.data.footer['footer_bottom'] %}
+<footer class="footer-bg bg-property theme-bg-2" data-background="{{ footer_two.section.image | relative_url }}">
+    <div class="footer-top position-relative pt-110 pb-80">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget-1 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="footer-title">
+                            <h4>{{ footer_two.column1.heading }}</h4>
+                        </div>
+                        <div class="footer-text">
+                            <p>{{ footer_two.column1.description }}</p>
+                        </div>
+                        <div class="footer-info">
+                            <a href="tel:{{ footer_two.column1.number.url }}"><i class="fas fa-phone-alt"></i>{{ footer_two.column1.number.label }}</a>
+                        </div>
+                        <div class="footer-social mt-35">
+                            <h5>{{ footer_two.column1.social_label }}</h5>
+                            {% for social in footer_two.column1.social %}
+                            <a href="{{ social.url }}"><i class="{{ social.icon }}"></i></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                    <div class="footer-widget-2 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="footer-title">
+                            <h4>{{ footer_two.column2.heading }}</h4>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                {% for menu in footer_two.column2.menu %}
+                                <li><a href="{{ menu.url }}">{{ menu.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                    <div class="footer-widget-3 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="footer-title">
+                            <h4>{{ footer_two.column3.heading }}</h4>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                {% for menu in footer_two.column3.menu %}
+                                <li><a href="{{ menu.url }}">{{ menu.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget-4 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="footer-title">
+                            <h4>{{ footer_two.column4.heading }}</h4>
+                        </div>
+                        <div class="footer-text">
+                            <p>{{ footer_two.column4.description }}</p>
+                        </div>
+                        <div class="footer-contact-info pt-20">
+                            <span><i class="fas fa-phone-alt"></i><a href="tel:{{ footer_two.column4.number.url }}">{{ footer_two.column4.number.label }}</a></span>
+                            <span><i class="fas fa-envelope"></i><a href="mailto:{{ footer_two.column4.email.url }}">{{ footer_two.column4.email.label }}</a></span>
+                            <span><i class="fas fa-map-marker-alt"></i><span class="footer-contact-location">{{ footer_two.column4.location }}</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom pt-40 pb-30 bt-1 b-color-2">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="copyright">
+                        <p>{{ footer_bottom.copyright }}</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center text-xl-end text-lg-end text-md-end">
+                    <div class="footer-menu">
+                        <ul>
+                            {% for menu in footer_bottom.menu %}
+                            <li><a href="{{ menu.url }}">{{ menu.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,24 @@
+<div class="breadcrumb-area pt-160 pb-160 bg-property" data-overlay="black" data-opacity="7" data-background="{{ "assets/images/breadcrumb/1.jpg" | relative_url }}">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12 justify-content-center">
+                <div class="breadcrumb-content-wrapper text-center">
+                    <h2>{{ include.title }}</h2>
+                    <p>{{ include.subtitle }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="breadcrumb-navigation">
+                    <nav aria-label="breadcrumb">
+                        <ul>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ include.currentpage }}</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

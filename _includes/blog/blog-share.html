@@ -1,0 +1,18 @@
+<div class="post-share">
+    <h5>Share:</h5>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        <li>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        <li>
+            <a href="http://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&description={{page.title}}" onclick="window.open(this.href, 'pinterest', 'width=550,height=235');return false;" target="_blank" title="Share on Pinterest">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+        </li>
+    </ul>
+</div>

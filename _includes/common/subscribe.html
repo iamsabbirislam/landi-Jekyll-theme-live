@@ -1,0 +1,16 @@
+{% assign subscribe_one = site.data.subscribe['subscribe_one'] %}
+<div class="newsletter-area pt-110 pb-110 bg-property" data-overlay="black" data-opacity="7" data-background="{{ subscribe_one.image | relative_url }}">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="newsletter-content-wrapper text-center wow fadeInUp" data-wow-delay=".3s">
+                    <h2>{{ subscribe_one.heading }}</h2>
+                    <form action="{{ subscribe_one.form_action }}" method="POST">
+                        <input type="email" name="subscribe" id="subscriber-email" type="text" placeholder="Enter Your Email">
+                        <button type="submit" id="subscribe-button" class="l-btn cmk-button cmk-rotate-right pl-60 pr-60 fw-light">{{ subscribe_one.button_label }}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

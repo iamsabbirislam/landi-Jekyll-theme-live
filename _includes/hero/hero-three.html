@@ -1,0 +1,87 @@
+{% assign hero_three = site.data.hero['hero_three'] %}
+
+<!-- Slider Start -->
+<div class="hero-slider-2">
+    <div class="single-slider-style-2 height-680 bg-property d-flex align-items-center" data-overlay="black" data-opacity="4" data-background="{{ hero_three.slider1.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="slide-content-wrapper-2">
+                        <h1>{{ hero_three.slider1.heading }}</h1>
+                        <p>{{ hero_three.slider1.description }}</p>
+                        <a href="{{ hero_three.slider1.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ hero_three.slider1.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slider-style-2 height-680 bg-property d-flex align-items-center" data-overlay="black" data-opacity="4" data-background="{{ hero_three.slider2.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="slide-content-wrapper-2">
+                        <h1>{{ hero_three.slider2.heading }}</h1>
+                        <p>{{ hero_three.slider2.description }}</p>
+                        <a href="{{ hero_three.slider2.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ hero_three.slider2.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slider-style-2 height-680 bg-property d-flex align-items-center" data-overlay="black" data-opacity="4" data-background="{{ hero_three.slider3.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="slide-content-wrapper-2">
+                        <h1>{{ hero_three.slider3.heading }}</h1>
+                        <p>{{ hero_three.slider3.description }}</p>
+                        <a href="{{ hero_three.slider3.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ hero_three.slider3.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slider-style-2 height-680 bg-property d-flex align-items-center" data-overlay="black" data-opacity="4" data-background="{{ hero_three.slider4.image | relative_url }}">
+        <div class="container custom-container-1">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="slide-content-wrapper-2">
+                        <h1>{{ hero_three.slider4.heading }}</h1>
+                        <p>{{ hero_three.slider4.description }}</p>
+                        <a href="{{ hero_three.slider4.button.url | relative_url }}" class="l-btn cmk-button cmk-rotate-right">{{ hero_three.slider4.button.label }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider End -->
+
+<!-- Slider Box Start -->
+<div class="hero-slider-box theme-bg-1">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="slider-box pr-200">
+                    <div class="single-slider-box pt-40 pb-20 pl-20 pr-20">
+                        <h3 class="white-color">{{ hero_three.slider_box.slider1.subheading }}</h3>
+                        <p class="white-color">{{ hero_three.slider_box.slider1.heading }}</p>
+                    </div>
+                    <div class="single-slider-box pt-40 pb-20 pl-20 pr-20">
+                        <h3 class="white-color">{{ hero_three.slider_box.slider2.subheading }}</h3>
+                        <p class="white-color">{{ hero_three.slider_box.slider2.heading }}</p>
+                    </div>
+                    <div class="single-slider-box pt-40 pb-20 pl-20 pr-20">
+                        <h3 class="white-color">{{ hero_three.slider_box.slider3.subheading }}</h3>
+                        <p class="white-color">{{ hero_three.slider_box.slider3.heading }}</p>
+                    </div>
+                    <div class="single-slider-box pt-40 pb-20 pl-20 pr-20">
+                        <h3 class="white-color">{{ hero_three.slider_box.slider4.subheading }}</h3>
+                        <p class="white-color">{{ hero_three.slider_box.slider4.heading }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider Box End -->

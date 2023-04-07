@@ -1,0 +1,63 @@
+{% assign blog_three = site.data.blog['blog_three'] %}
+<div class="blog-area bg-white pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-70 wow fadeInUp" data-wow-delay=".3s">
+                    <span>{{ blog_three.section.heading }}</span>
+                    <h2>{{ blog_three.section.description }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in paginator.posts %}
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="single-blog-wrapper pt-10 pr-10 pb-10 pl-10 mb-25 box-shadow-1 wow fadeInUp" data-wow-delay=".3s">
+                        {% if post.image %}
+                        <div class="blog-img bg-hover-style-1">
+                            <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+                            <a href="{{ post.url | prepend: site.baseurl }}"><i class="fas fa-plus"></i></a>
+                        </div>
+                        {% endif %}
+                        <div class="blog-content pt-10 pr-10 pb-10 pl-10">
+                            <ul class="cat-list mt-30 mb-30">
+                                {% for category in site.categories %}
+                                    <li><a href="{{ category[0] }}">{{ category[0] }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            <h4><a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+                            <ul class="post-meta mb-30">
+                                <li>{{ post.date | date: " %-d %B %Y" }}</li>
+                                <li><span>By</span> <a href="#">Andrew Phili</a></li>
+                            </ul>
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="l-read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% if paginator.total_pages > 1 %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="landi-pagination mt-60 text-center">
+                        <ul>
+                            {% if paginator.previous_page %}
+                                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-angle-left"></i></a></li>
+                            {% endif %}
+                            {% if page == paginator.page %}
+                                <li><span class="current">{{ page }}</span></li>
+                            {% elsif page == 1 %}
+                                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="current">{{ page }}</span></a></li>
+                            {% else %}
+                                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                            {% endif %}
+                            {% if paginator.next_page %}
+                                <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-angle-right"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>>
+        {% endif %}
+    </div>
+</div>
