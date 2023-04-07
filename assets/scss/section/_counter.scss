@@ -1,0 +1,23 @@
+@use '../utils' as *;
+
+/**
+*   08. Fun Fact
+*/
+
+.single-counter {
+    & h2 {
+        color: #fff;
+        font-size: 46px;
+        margin-bottom: 20px;
+    }
+    & p {
+        color: #fff;
+        font-size: 20px;
+        @media #{$md}{
+            font-size: 16px;
+        }
+    }
+    @media #{$md}{
+        margin-bottom: 30px;
+    }
+}

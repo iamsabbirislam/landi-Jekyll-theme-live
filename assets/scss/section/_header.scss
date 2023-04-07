@@ -1,0 +1,192 @@
+@use '../utils' as *;
+
+/**
+*   04. Header
+*/
+
+.header-info {
+    @media #{$md}{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    @media #{$sm}{
+        text-align: center;
+    }
+    @media #{$xs}{
+        text-align: center;
+    }
+    & ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            color: #f1f1f1;
+            margin-right: 40px;
+            display: inline-block;
+            @media #{$sm}{
+                margin-bottom: 10px;
+            }
+            @media #{$xs}{
+                margin-bottom: 10px;
+            }
+            & i {
+                color: var(--tt-text-2);
+                padding-right: 10px;
+            }
+            & a:hover {
+                color: var(--tt-text-2);
+            }
+        }
+    }
+}
+
+.logo {
+    @media #{$sm}{
+        padding: 25px 0;
+    }
+    @media #{$xs}{
+        padding: 25px 0;
+    }
+}
+
+.header-btn.f-right {
+    @media #{$md}{
+        margin-right: 100px;
+    }
+    @media #{$sm}{
+        display: none;
+    }
+    @media #{$xs}{
+        display: none;
+    }
+}
+
+.header-call-btn {
+    @media #{$md}{
+        margin-right: 100px;
+    }
+    @media #{$sm}{
+        display: none;
+    }
+    @media #{$xs}{
+        display: none;
+    }
+}
+
+.header-social {
+    @media #{$md}{
+        text-align: center;
+    }
+    @media #{$sm}{
+        text-align: center;
+    }
+    @media #{$xs}{
+        text-align: center;
+    }
+    & a {
+        color: #f1f1f1;
+        margin-left: 17px;
+        &:hover {
+            color: var(--tt-text-2);
+        }
+    }
+}
+
+.main-menu {
+    & ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            display: inline-block;
+            margin-left: 45px;
+            position: relative;
+            @media #{$lg}{
+                margin-left: 25px;
+            }
+            & a {
+                color: var(--tt-text-1);
+                font-size: 18px;
+                font-weight: 600;
+                display: block;
+                padding: 40px 0;
+            }
+            &:hover>a {
+                color: var(--tt-text-2);
+            }
+            &:hover>.submenu {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+                @include transition(.3s);
+            }
+            & .submenu {
+                position: absolute;
+                background-color: #fff;
+                width: 230px;
+                padding: 15px 25px;
+                border-top: 4px solid var(--tt-border-3);
+                top: 110%;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(.3s);
+                z-index: 3;
+                & li {
+                    display: block;
+                    margin-left: 0px;
+                    text-align: left;
+                    @include transition(.3s);
+                    & a {
+                        display: block;
+                        color: #523906;
+                        padding: 8px 0;
+                    }
+                    &:hover {
+                        padding-left: 10px;
+                        @include transition(.3s);
+                    }
+                    &:hover>a {
+                        color: var(--tt-text-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    &.mean-container {
+        @media #{$md}{
+            margin-top: -75px;
+        }
+        @media #{$sm}{
+            margin-top: -65px;
+        }
+        @media #{$xs}{
+            margin-top: -65px;
+        }
+    }
+    @media #{$lg}{
+        margin-top: -78px;
+    }
+}
+
+.sticky {
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include box-shadow(0 0 60px 0 rgb(0 0 0 / 7%));
+    z-index: 9999;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms 0s normal none 1 running fadeInDown;
+    background: #fff;
+    & .mobile-menu.mean-container {
+        @media #{$sm}{
+            margin-right: 12px;
+        }
+        @media #{$xs}{
+            margin-right: 12px;
+        }
+    }
+}

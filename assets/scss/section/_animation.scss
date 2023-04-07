@@ -1,0 +1,12 @@
+.pulse-effect {
+    animation: pulse-effect 1s infinite;
+}
+
+@keyframes pulse-effect {
+    0% {
+        box-shadow: 0 0 0 0px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}

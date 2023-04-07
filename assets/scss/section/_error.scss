@@ -1,0 +1,19 @@
+@use '../utils' as *;
+
+/**
+*   23. Error 404
+*/
+
+.error-404-wrapper {
+    & h2 {
+        font-size: 150px;
+        color: var(--tt-text-2);
+    }
+    & h3 {
+        font-size: 46px;
+        margin-bottom: 30px;
+    }
+    & p {
+        margin-bottom: 40px;
+    }
+}

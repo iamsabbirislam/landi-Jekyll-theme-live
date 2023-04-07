@@ -1,0 +1,136 @@
+@use '../utils' as *;
+
+/**
+*   07. Service
+*/
+
+.service-features {
+    & .pl-70 {
+        @media #{$lg}{
+            padding-left: 35px;
+        }
+        @media #{$md}{
+            padding-left: 0;
+        }
+    }
+    &.mt-140 {
+        @media #{$md}{
+            margin-top: 0;
+        }
+    }
+    & img {
+        @media #{$lg}{
+            width: 400px;
+        }
+        @media #{$md}{
+            width: 300px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.single-feature {
+    @media #{$md}{
+        margin-bottom: 30px;
+    }
+}
+
+.single-service {
+    background-color: #fff;
+    padding: 25px 25px 30px 25px;
+    margin-bottom: 25px;
+    @include transition(.3s);
+    & h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        @media #{$md}{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    & p {
+        margin-bottom: 20px;
+    }
+    a {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--tt-text-2);
+        & i {
+            padding-left: 7px;
+        }
+    }
+    &:hover {
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        @include transition(.3s);
+    }
+    &:hover h3,
+    &:hover p,
+    &:hover a {
+        color: #fff;
+    }
+    &:hover .service-readmore-icon {
+        opacity: 1;
+        visibility: visible;
+        @include transition(.3s);
+    }
+}
+
+.service-icon {
+    background-color: #faf7e6;
+    width: 80px;
+    height: 80px;
+    @include transform(rotate(45deg));
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 21px;
+    margin: 30px 0 35px 21px;
+    & img {
+        @include transform(rotate(-45deg));
+    }
+    & i {
+        font-size: 40px;
+        @include transform(rotate(-45deg));
+    }
+}
+
+.single-service-large {
+    background-color: var(--tt-theme-3);
+    padding: 46px 30px;
+    & h3 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #fff;
+        & span {
+            font-weight: 700;
+        }
+    }
+    & p {
+        color: #fff;
+        margin-bottom: 50px;
+    }
+}
+
+.service-readmore-icon {
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+}
+
+.service-bullet-wrapper h2 {
+    @media #{$md}{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

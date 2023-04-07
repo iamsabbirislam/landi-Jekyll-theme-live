@@ -1,0 +1,289 @@
+@use '../utils' as *;
+
+/**
+*   09. Project
+*/
+
+.project-area {
+    & .mb-70,
+    & .l-btn {
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+    }
+    & .section-title h2 {
+        @media #{$lg}{
+            font-size: 40px;
+        }
+        @media #{$md}{
+            font-size: 27px;
+            line-height: 37px;
+        }
+    }
+}
+
+.single-project {
+    @include transition(.3s);
+    @media #{$sm}{
+        margin-bottom: 30px;
+    }
+    @media #{$xs}{
+        margin-bottom: 30px;
+    }
+    &:hover .single-project-img-icon {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .single-project-content {
+        background-color: var(--tt-theme-3);
+        @include transition(.3s);
+        border-color: var(--tt-border-3);
+    }
+    &:hover .single-project-content h3,
+    &:hover .single-project-content p {
+        color: #fff;
+    }
+}
+
+.single-project-img {
+    height: 285px;
+    position: relative;
+    @include transition(.3s);
+}
+
+.single-project-img-icon {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    @include border-radius(50px);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    & a i {
+        font-size: 14px;
+        line-height: 40px;
+        color: var(--tt-text-1);
+    }
+}
+
+.single-project-content {
+    background-color: #faf7e6;
+    padding: 50px 25px 35px 25px;
+    border-bottom: 3px solid;
+    border-color: var(--tt-border-2);
+    & h3 {
+        margin-bottom: 20px;
+        @media #{$lg}{
+            font-size: 21px;
+        }
+        @media #{$md}{
+            font-size: 20px;
+        }
+    }
+    & p {
+        margin-bottom: 0px;
+    }
+}
+
+/*Project Masonry Style*/
+
+.portfolio-menu {
+    display: inline-block;
+    background-color: var(--tt-theme-3);
+    padding: 0 40px;
+    height: 72px;
+    & button {
+        border: none;
+        background-color: transparent;
+        color: #faf7e6;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: var(--tt-ff-lora);
+        padding: 20px 15px;
+        border-bottom: 5px solid var(--tt-border-3);
+        @media #{$md}{
+            font-size: 16px;
+            padding: 20px 9px;
+        }
+    }
+    & button.active {
+        border-bottom: 5px solid var(--tt-border-2);
+    }
+    @media #{$sm}{
+        height: auto;
+    }
+    @media #{$xs}{
+        height: auto;
+    }
+}
+
+.single-project-isotope {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    @media #{$lg}{
+        height: 310px;
+    }
+    & img {
+        width: 100%;
+        height: 350px;
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0%;
+        background-color: var(--tt-theme-1);
+        opacity: .95;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        @include transition(0.3s);
+    }
+    &:hover:before {
+        height: 100%;
+    }
+    &:hover .project-isotope-content-wrapper {
+        bottom: 12%;
+        @include transform(translateY(-12%));
+        @media #{$lg}{
+            bottom: 8%;
+            @include transform(translateY(-8%));
+        }
+        @media #{$md}{
+            bottom: 1%;
+        }
+    }
+}
+
+.single-project-isotope-style-2 {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    & img {
+        width: 100%;
+        height: 350px;
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0%;
+        background-color: var(--tt-theme-1);
+        opacity: .95;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        @include transition(0.3s);
+    }
+    &:hover:before {
+        height: 100%;
+    }
+    &:hover .portfolio-heading-content-2 {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        text-align: center;
+        padding: 0;
+        @include transition(0.3s);
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .portfolio-content-2 a {
+        display: inline-block;
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        @include border-radius(50px);
+        margin: 0 2px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.project-isotope-content-wrapper {
+    position: absolute;
+    bottom: -190px;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    padding: 0 40px;
+    @include transition(0.3s);
+    @media #{$lg}{
+        bottom: -240px;
+    }
+    @media #{$md}{
+        bottom: -340px;
+        padding: 0 25px;
+    }
+    & h3 {
+        font-size: 24px;
+        color: #fff;
+    }
+    & p {
+        color: #fff;
+    }
+    & a {
+        color: var(--tt-text-2);
+        & i {
+            padding-left: 7px;
+        }
+    }
+}
+
+.portfolio-heading-content-2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    padding: 0;
+    @include transition(0.3s);
+    opacity: 0;
+    visibility: hidden;
+    & h3 {
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-content-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+    @include transform(translate(-50%, -40%));
+    & a {
+        display: inline-block;
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        @include border-radius(50px);
+        margin: 0 2px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,199 @@
+@use '../utils' as *;
+
+/**
+*   19. Widgets
+*/
+
+.widget {
+    padding: 35px 20px;
+    position: relative;
+    background-color: #f1f1f1;
+    &:before {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 4px;
+        background-color: var(--tt-theme-3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media #{$lg}{
+            width: 200px;
+        }
+    }
+    & ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.widget.contact-widget:before {
+    display: none;
+}
+
+.widget-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.service-list-widget {
+    & ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            list-style: none;
+            & a {
+                display: block;
+                color: var(--tt-text-1);
+                background-color: #fff;
+                padding: 18px;
+                margin: 11px 0;
+                font-size: 18px;
+                font-weight: 700;
+                font-family: var(--tt-ff-lora);
+                line-height: 30px;
+                &:hover {
+                    color: #fff;
+                    background-color: var(--tt-theme-3);
+                }
+                & i {
+                    float: right;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.contact-widget {
+    background-color: var(--tt-theme-1);
+    padding: 40px 40px 30px 30px;
+    & span {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    & p {
+        color: #fff;
+        margin-bottom: 35px;
+    }
+    & h3 {
+        color: #fff;
+        & a {
+            display: inline-block;
+            color: #fff;
+            margin-top: 35px;
+        }
+    }
+}
+
+.quote-widget {
+    & input {
+        width: 100%;
+        height: 60px;
+        padding: 0 22px;
+        font-size: 16px;
+        border: none;
+        margin: 7px 0;
+        background-color: #fff;
+    }
+    & textarea {
+        width: 100%;
+        border: none;
+        padding: 15px 22px;
+        font-size: 16px;
+        margin: 7px 0;
+        background-color: #fff;
+    }
+    & button {
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        padding: 15px 20px;
+        display: block;
+        border: none;
+        width: 100%;
+        text-align: left;
+        line-height: 30px;
+        &:hover {
+            background-color: var(--tt-theme-1);
+        }
+    }
+    & i {
+        float: right;
+        line-height: 30px;
+    }
+}
+
+.search-widget {
+    & input {
+        height: 66px;
+        width: 100%;
+        border: 2px solid var(--tt-border-3);
+        padding: 0 20px;
+        color: var(--tt-text-1);
+    }
+    & button {
+        position: absolute;
+        right: 20px;
+        width: 66px;
+        height: 66px;
+        line-height: 66px;
+        border: none;
+        background-color: var(--tt-theme-3);
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.category-widget {
+    & ul {
+        li {
+            display: block;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: var(--tt-ff-lora);
+            color: var(--tt-text-1);
+            & span {
+                float: right;
+            }
+            & a {
+                display: inline-block;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover,
+            &:hover a {
+                color: var(--tt-text-2);
+            }
+        }
+    }
+}
+
+.single-latest-post-widget {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c9c3b6;
+    &:last-child {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: none;
+    }
+    & h5 a {
+        display: block;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    & span {
+        display: block;
+        color: var(--tt-text-2);
+        &:last-child {
+            border: none;
+        }
+    }
+}

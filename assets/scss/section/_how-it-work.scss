@@ -1,0 +1,130 @@
+@use '../utils' as *;
+
+/**
+*   13. How It Works
+*/
+
+.how-it-works-icon {
+    display: inline-block;
+    background-color: var(--tt-theme-3);
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    @include border-radius(100px);
+    text-align: center;
+}
+
+.works-icon {
+    border-top: 4px;
+    border-right: 1px;
+    border-bottom: 3px;
+    border-left: 6px;
+    border-style: solid;
+    border-color: var(--tt-border-3);
+    display: inline-block;
+    padding: 5px;
+    @include border-radius(100px);
+    &:before {
+        content: '';
+        display: block;
+    }
+    & img {
+        background-color: var(--tt-theme-3);
+        padding: 30px;
+        @include border-radius(100px);
+        width: 130px;
+        height: 130px;
+        @media #{$lg}{
+            padding: 20px;
+            width: 90px;
+            height: 90px;
+        }
+        @media #{$md}{
+            padding: 15px;
+            width: 90px;
+            height: 90px;
+        }
+        @media #{$sm}{
+            padding: 15px;
+            width: 70px;
+            height: 70px;
+        }
+        @media #{$xs}{
+            padding: 15px;
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+ul.works-menu li {
+    display: inline-block;
+    margin: 0 30px;
+    @media #{$md}{
+        margin: 0 20px;
+    }
+    @media #{$sm}{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    @media #{$xs}{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    & button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.works-content-wrapper {
+    @media #{$sm}{
+        margin-bottom: 30px;
+    }
+    @media #{$xs}{
+        margin-bottom: 30px;
+    }
+    & h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        @media #{$lg}{
+            font-size: 22px;
+        }
+        @media #{$md}{
+            font-size: 22px;
+        }
+    }
+    &:hover .works-link {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        opacity: 1;
+        visibility: visible;
+        @include transition(.3s);
+    }
+}
+
+.works-menu .active .works-icon {
+    border-color: var(--tt-border-2);
+    & img {
+        background-color: var(--tt-theme-1);
+    }
+}
+
+.works-img img {
+    width: 100%;
+}
+
+.works-link {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+}

@@ -1,0 +1,40 @@
+// font url
+$font-url: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap';
+
+// font family
+$font-family: (
+    ff: (
+        roboto: "'Roboto', sans-serif",
+        lora: "'Lora', serif",
+        fontawesome: '"Font Awesome 5 Free"',
+    )
+);
+
+// font weight
+$font-weight: (
+    fw: (
+        normal: normal,
+        elight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        sbold: 600,
+        bold: 700,
+        ebold: 800,
+        black: 900,
+    )
+);
+
+// font size
+$font-size: (
+    fz: (
+        body: 16px,
+        p: 14px,
+        h1: 40px,
+        h2: 35px,
+        h3: 28px,
+        h4: 22px,
+        h5: 18px,
+        h6: 16px,
+    )
+);

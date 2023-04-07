@@ -1,0 +1,199 @@
+@use '../utils' as *;
+
+/* Play Button */
+
+a.play-btn {
+    display: block;
+    background-color: var(--tt-grey-3);
+    color: var(--tt-text-2);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    @include transform(translateX(-50%));
+    @media #{$lg} {
+        left: 55%;
+    }
+    @media #{$md} {
+        left: 65%;
+        @include transform(translateX(-65%));
+    }
+    @media #{$sm} {
+        left: 22%;
+        @include transform(translateX(-22%));
+    }
+    @media #{$xs} {
+        left: 22%;
+        @include transform(translateX(-22%));
+    }
+}
+
+
+/* Theme Button */
+
+.l-btn {
+    background-color: var(--tt-theme-3);
+    color: #fff;
+    font-family: var(--tt-ff-lora);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 22px 40px;
+    @include border-radius(50px);
+    line-height: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    &:hover {
+        background-color: var(--tt-text-1);
+        color: var(--tt-common-white);
+    }
+    &:focus {
+        background-color: var(--tt-text-1);
+        color: #fff;
+    }
+}
+
+.cmk-button:before {
+    background-color: var(--tt-theme-1);
+}
+
+
+/* Header Button */
+
+.header-btn {
+    padding: 19px 0;
+}
+
+.header-call-btn {
+    padding: 18px 0;
+    & img {
+        margin-right: 12px;
+    }
+    & a {
+        font-size: 24px;
+        font-weight: var(--tt-fw-bold);
+        line-height: 70px;
+        color: var(--tt-text-1);
+        font-family: var(--tt-ff-lora);
+    }
+    & a:hover {
+        color: var(--tt-text-2);
+    }
+}
+
+
+/* Service Large Button */
+
+.single-service-large {
+    & .l-btn {
+        background-color: var(--tt-text-1);
+    }
+}
+
+
+/* Quote Button */
+
+button.quote-btn {
+    &.l-btn {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 17px;
+        text-align: left;
+        font-weight: 700;
+        & i {
+            float: right;
+        }
+    }
+}
+
+
+/* CTA Button */
+
+.cta-style-1-wrapper {
+    & .l-btn:hover {
+        background-color: var(--tt-theme-3);
+    }
+}
+
+
+/* Contact Button */
+
+a.l-contact-btn {
+    display: inline-block;
+    background-color: var(--tt-theme-3);
+    color: var(--tt-common-white);
+    padding-left: 80px;
+    @include border-radius(50px);
+    font-size: 18px;
+    font-weight: var(--tt-fw-bold);
+    position: relative;
+    width: 209px;
+    height: 60px;
+    line-height: 60px;
+    & i {
+        background-color: var(--tt-common-white);
+        color: var(--tt-text-1);
+        @include border-radius(50px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+}
+
+/* Tags Cloud */
+
+.tag-cloud-widget {
+    & .l-btn {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--tt-ff-lora);
+        padding: 13px 20px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        background-color: #fff;
+        color: var(--tt-text-1);
+        &:hover {
+            background-color: var(--tt-theme-3);
+            color: var(--tt-common-white)
+        }
+    }
+}
+
+
+/* Contact Form Button */
+
+.contact-form {
+    & .l-btn {
+        text-align: left;
+        & i {
+            float: right;
+        }
+    }
+}
+
+
+/* Social Button */
+
+.social-btn-area {
+    & .l-btn {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--tt-ff-roboto);
+        text-transform: capitalize;
+        padding: 0;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,130 @@
+@use '../utils' as *;
+
+/**
+*   28. Quote Form
+*/
+
+.quote-title {
+    & h2 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    & h2:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: var(--tt-theme-3);
+        margin-top: 25px;
+    }
+    & p {
+        color: #fff;
+    }
+    @media #{$sm}{
+        padding-right: 20px;
+    }
+    @media #{$xs}{
+        padding-right: 20px;
+    }
+}
+
+.quote-area-form {
+    &.ml-110.mr-110 {
+        @media #{$sm}{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media #{$xs}{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    background-color: #fff;
+    padding: 50px 25px;
+    & h3 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    & input {
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        border: none;
+        background-color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    & textarea {
+        width: 100%;
+        height: 178px;
+        background-color: #f1f1f1;
+        border: none;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    & button {
+        width: 100%;
+        @include border-radius(0);
+        font-weight: 400;
+    }
+}
+
+.book-quote-form {
+    &.ml-65.pt-70.pb-70 {
+        @media #{$sm}{
+            margin-left: 0;
+        }
+        @media #{$xs}{
+            margin-left: 0;
+        }
+    }
+    background-color: #fff;
+    padding: 50px 25px;
+    & input {
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        border: none;
+        background-color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    & textarea {
+        width: 100%;
+        height: 178px;
+        background-color: #f1f1f1;
+        border: none;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    & button {
+        width: 100%;
+        @include border-radius(0);
+        font-weight: 400;
+    }
+    @media #{$md}{
+        margin-left: 0;
+    }
+}
+
+.contact-form {
+    & input {
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        border: none;
+        background-color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    & textarea {
+        width: 100%;
+        height: 178px;
+        background-color: #f1f1f1;
+        border: none;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    & button {
+        width: 100%;
+        @include border-radius(0);
+        font-weight: 400;
+    }
+}

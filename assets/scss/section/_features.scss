@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+/**
+*   26. Features
+*/
+
+.single-feature {
+    padding: 47px 25px;
+    @include transition(0.3s);
+    @media #{$sm}{
+        margin-bottom: 30px;
+    }
+    @media #{$xs}{
+        margin-bottom: 30px;
+    }
+    & img {
+        margin-bottom: 25px;
+    }
+    & h5 {
+        margin-bottom: 25px;
+        @media #{$lg}{
+            font-size: 19px;
+        }
+    }
+    &:hover {
+        background-color: var(--tt-theme-1);
+    }
+    &:hover h5,
+    &:hover p {
+        color: #fff;
+    }
+}

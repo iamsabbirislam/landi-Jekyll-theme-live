@@ -1,0 +1,283 @@
+@use '../utils' as *;
+
+/**
+*   05. Hero area
+*/
+
+
+/*Style 1*/
+
+.hero-wrapper {
+    & h1 {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 85px;
+        color: #fff;
+        margin-bottom: 40px;
+        @media #{$lg}{
+            font-size: 55px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @media #{$sm}{
+            margin-top: 70px;
+            font-size: 40px;
+            line-height: 60px;
+        }
+        @media #{$xs}{
+            margin-top: 70px;
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+    & p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 30px;
+        padding-right: 60px;
+    }
+}
+
+.hero-popup-content {
+    position: relative;
+    margin-left: 60px;
+    @media #{$xxxl}{
+        margin-left: 120px;
+    }
+    @media #{$xxl}{
+        margin-left: 120px;
+    }
+    @media #{$xl}{
+        margin-left: 120px;
+    }
+    @media #{$lg}{
+        margin-top: 110px;
+        margin-left: 0;
+    }
+    @media #{$md}{
+        margin-left: 0px;
+    }
+    @media #{$sm}{
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @media #{$xs}{
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    & img {
+        width: 400px;
+        @media #{$lg}{
+            width: 390px;
+        }
+        @media #{$md}{
+            width: 330px;
+        }
+        @media #{$sm}{
+            width: 260px;
+        }
+        @media #{$xs}{
+            width: 260px;
+        }
+    }
+    &:before {
+        @media #{$lg}{
+            width: 430px;
+        }
+        @media #{$md}{
+            width: 370px;
+        }
+        @media #{$sm}{
+            width: 300px;
+        }
+        @media #{$xs}{
+            width: 300px;
+        }
+    }
+}
+
+/*Style 2*/
+
+.hero-slider-1 {
+    & .single-slider-style-1 {
+        position: relative;
+        z-index: 2;
+        &:before {
+            content: '';
+            display: block;
+            background-image: -moz-linear-gradient( 0deg, rgb(82, 57, 6) 0%, rgba(82, 57, 6, 0.5) 47%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgb(82, 57, 6) 0%, rgba(82, 57, 6, 0.5) 47%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgb(82, 57, 6) 0%, rgba(82, 57, 6, 0.5) 47%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%, rgba(82, 57, 6, 0) 100%);
+            position: absolute;
+            left: 0px;
+            top: 0;
+            width: 1920px;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    & .slide-content-wrapper-1 {
+        @media #{$lg}{
+            margin-left: 70px;
+        }
+        & h1 {
+            font-size: 75px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 35px;
+            @media #{$md}{
+                font-size: 46px;
+            }
+        }
+        & p {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+    }
+    & ul.slick-dots {
+        position: absolute;
+        bottom: 10%;
+        right: 18%;
+        & li {
+            display: inline-block;
+            margin-left: 10px;
+            &.slick-active button {
+                background-color: #fff;
+                border: 2px solid #fff;
+                color: var(--tt-text-1);
+            }
+            & button {
+                background: transparent;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: var(--tt-ff-lora);
+                width: 40px;
+                height: 40px;
+                border: 2px solid #fff;
+            }
+        }
+    }
+    & .slick-next {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        right: 17%;
+        z-index: 1;
+        @media #{$lg}{
+            right: 10%;
+        }
+        @media #{$md}{
+            right: 4%;
+        }
+    }
+    & .slick-prev {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        z-index: 1;
+        @media #{$lg}{
+            left: 5%;
+        }
+        @media #{$md}{
+            left: 4%;
+        }
+    }
+}
+
+/*Style 3*/
+
+.hero-slider-2 {
+    & .slide-content-wrapper-2 {
+        & h1 {
+            font-size: 56px;
+            line-height: 66px;
+            color: #fff;
+            margin-bottom: 40px;
+            @media #{$sm}{
+                font-size: 46px;
+                line-height: 56px;
+            }
+            @media #{$xs}{
+                font-size: 46px;
+                line-height: 56px;
+            }
+        }
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.hero-slider-box {
+    z-index: 2333;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    & .slick-next,
+    & .slick-prev {
+        position: absolute;
+        background-color: #fff;
+        color: var(--tt-text-1);
+        font-size: 18px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        border: none;
+    }
+    & .slick-next {
+        top: 50px;
+        right: 0;
+        @include border-radius(50px 50px 0px 50px);
+        @media #{$sm}{
+            top: 85px;
+        }
+        @media #{$xs}{
+            top: 85px;
+        }
+    }
+    & .slick-prev {
+        top: 50px;
+        left: 87%;
+        @include border-radius(0px 50px 50px 50px);
+        @media #{$lg}{
+            left: 84%;
+        }
+        @media #{$md}{
+            left: 78%;
+        }
+        @media #{$sm}{
+            left: 62%;
+            top: 85px;
+        }
+        @media #{$xs}{
+            left: 62%;
+            top: 85px;
+        }
+    }
+    & .slick-prev:hover,
+    & .slick-next:hover {
+        background-color: var(--tt-theme-3);
+        color: #fff;
+    }
+}
+
+.single-slider-box.slick-current.slick-active {
+    background-color: var(--tt-theme-3);
+}

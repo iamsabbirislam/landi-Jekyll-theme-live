@@ -1,0 +1,39 @@
+@use '../utils' as *;
+
+/**
+*   25. Newsletter
+*/
+
+.newsletter-content-wrapper {
+    & h2 {
+        font-size: 36px;
+        line-height: 46px;
+        color: #fff;
+        margin-bottom: 60px;
+        @media #{$md}{
+            font-size: 30px;
+        }
+        @media #{$sm}{
+            font-size: 30px;
+        }
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+    & input {
+        width: 50%;
+        height: 60px;
+        padding: 0 30px;
+        @include border-radius(50px);
+        border: none;
+        margin-right: 20px;
+        @media #{$sm}{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}

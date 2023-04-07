@@ -1,0 +1,57 @@
+@use '../utils' as *;
+
+/**
+*   22. Pricing
+*/
+
+.pricing-area .pr-120 {
+    @media #{$md}{
+        padding-right: 0;
+        padding-left: 12px;
+    }
+    @media #{$sm}{
+        padding-right: 0;
+        padding-left: 12px;
+    }
+    @media #{$xs}{
+        padding-right: 0;
+        padding-left: 12px;
+    }
+}
+
+.single-pricing-box {
+    & .pl-0.pr-120 {
+        @media #{$lg}{
+            padding-left: 12px;
+            padding-right: 0;
+        }
+    }
+    & h3 {
+        color: #fff;
+        font-size: 46px;
+        line-height: 70px;
+    }
+    & h4 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    & a {
+        color: var(--tt-text-2);
+        & i {
+            padding-left: 7px;
+        }
+    }
+    & ul {
+        margin: 0;
+        padding: 0;
+        & li {
+            margin: 16px 0;
+            list-style: none;
+            & i {
+                color: var(--tt-text-2);
+                padding-right: 10px;
+            }
+        }
+    }
+}

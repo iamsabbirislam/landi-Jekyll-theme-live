@@ -1,0 +1,45 @@
+@use '../utils' as *;
+
+/**
+*   12. Book Appointment
+*/
+
+.book-appointment {
+    position: relative;
+    @media #{$sm}{
+        padding: 110px 0;
+    }
+    @media #{$xs}{
+        padding: 110px 0;
+    }
+}
+
+.book-appointment-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    @media #{$sm}{
+        display: none;
+    }
+    @media #{$xs}{
+        display: none;
+    }
+}
+
+.book-quote-widget {
+    & input[type="text"],
+    & input[type="email"] {
+        margin-right: 20px;
+    }
+    & input[type="text"],
+    & input[type="email"],
+    & textarea {
+        background-color: #f1f1f1;
+        border: none;
+        padding: 20px 18px;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}

@@ -1,0 +1,91 @@
+@use '../utils' as *;
+
+/**
+*   21. Service/Project Details
+*/
+
+.service-details {
+    & ul {
+        &.works-menu {
+            & li {
+                @media #{$lg}{
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+    & .works-content-wrapper h3 {
+        @media #{$lg}{
+            font-size: 18px;
+        }
+    }
+    & .pr-50 {
+        @media #{$md}{
+            padding-right: 0;
+        }
+        @media #{$sm}{
+            padding-right: 12px;
+        }
+        @media #{$xs}{
+            padding-right: 12px;
+        }
+    }
+}
+
+.service-details-wrapper {
+    @media #{$md}{
+        margin-top: 60px;
+    }
+    & h2 {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 33px;
+        @media #{$sm}{
+            margin-top: 50px;
+        }
+        @media #{$xs}{
+            margin-top: 50px;
+        }
+    }
+    & img {
+        width: 100%;
+    }
+}
+
+.project-details {
+    & .pr-50 {
+        @media #{$md}{
+            padding-right: 0;
+        }
+        @media #{$sm}{
+            padding-right: 12px;
+        }
+        @media #{$xs}{
+            padding-right: 12px;
+        }
+    }
+}
+
+.project-details-wrapper {
+    & img {
+        width: 100%;
+    }
+}
+
+.single-project-info {
+    padding: 35px;
+    text-align: center;
+    & h6 {
+        color: #fff;
+    }
+    & span {
+        display: block;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+}
+
+.accordion-item h2 {
+    margin-bottom: 0;
+    line-height: 30px;
+}

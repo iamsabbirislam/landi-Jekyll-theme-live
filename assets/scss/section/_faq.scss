@@ -1,0 +1,64 @@
+@use '../utils' as *;
+
+/**
+*   20. FAQ
+*/
+
+.faq-area .pr-50 {
+    @media #{$md}{
+        padding-right: 0px;
+    }
+    @media #{$sm}{
+        margin-top: 50px;
+        padding-right: 12px;
+    }
+    @media #{$xs}{
+        margin-top: 50px;
+        padding-right: 12px;
+    }
+}
+
+.faq {
+    & .accordion-item {
+        background-color: var(--tt-common-white);
+        border: none;
+        color: var(--tt-text-body);
+        margin-bottom: 10px;
+        padding: 0 20px;
+        @include box-shadow(0px 3px 81px 0px rgb(6 6 6 / 9%));
+    }
+    & .accordion-button {
+        color: var(--tt-text-1);
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--tt-ff-lora);
+        background-color: var(--tt-common-white);
+        outline: none;
+        box-shadow: none;
+    }
+    & .accordion-body {
+        border-top: 1px solid #e5e1da;
+    }
+    & .accordion-button:not(.collapsed)::after {
+        transform: var(--bs-accordion-btn-icon-transform);
+        font-family: var(--tt-ff-fontawesome);
+        content: "\f0dd";
+    }
+    & .accordion-button::after {
+        width: unset;
+        height: unset;
+        margin-left: auto;
+        background-image: none;
+        font-family: var(--tt-ff-fontawesome);
+        content: "\f0dd";
+    }
+    & h2 {
+        margin-bottom: 0;
+    }
+    & .accordion-button:focus {
+        outline: none;
+    }
+    @media #{$md}{
+        margin-bottom: 50px;
+    }
+}
