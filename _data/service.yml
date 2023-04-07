@@ -1,0 +1,160 @@
+service_one:
+  section:
+    heading: "Our Services"
+    description: "Why will you choose our <br> services?"
+  service1:
+    icon: "assets/images/service/landscape.png"
+    alt: "service icon"
+    heading: "Landscape Design"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service2:
+    icon: "assets/images/service/growing.png"
+    alt: "service icon"
+    heading: "Plant Growing"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service3:
+    icon: "assets/images/service/harvest.png"
+    alt: "service icon"
+    heading: "Branch Cutting"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service4:
+    icon: "assets/images/service/flower.png"
+    alt: "service icon"
+    heading: "Flower Scaping"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service5:
+    icon: "assets/images/service/tree.png"
+    alt: "service icon"
+    heading: "Tree Planting"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service6:
+    icon: "assets/images/service/rubbish.png"
+    alt: "service icon"
+    heading: "Rubbish Removal"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      link: "/service-details"
+  service7:
+    heading: "We are professional <span>Landscape & Gardening service</span>"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat omnis voluptas assumenda est, omnis dolor repellendus." 
+    button:
+      label: "Appointment"
+      link: "/contact"
+
+service_two:
+  image: "assets/images/service/2.jpg"
+  subheading: "Services"
+  heading: "Our Best Landscape Specialists"
+  button:
+    label: "Appointment"
+    link: "/contact"
+  feature1:
+    one: "These cases"
+    two: "We denounce"
+    three: "Nam libero"
+    four: "These cases"
+    five: "Pursue pleasure"
+  feature2:
+    one: "These cases"
+    two: "We denounce"
+    three: "Nam libero"
+    four: "These cases"
+    five: "Pursue pleasure"
+
+service_three:
+  section:
+    heading: "Our Services"
+    description: "Why will you choose our <br> services?"
+  service1:
+    icon: "assets/images/service/landscape.png"
+    alt: "service icon"
+    heading: "Landscape Design"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service2:
+    icon: "assets/images/service/growing.png"
+    alt: "service icon"
+    heading: "Plant Growing"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service3:
+    icon: "assets/images/service/harvest.png"
+    alt: "service icon"
+    heading: "Branch Cutting"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service4:
+    icon: "assets/images/service/flower.png"
+    alt: "service icon"
+    heading: "Flower Scaping"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service5:
+    icon: "assets/images/service/tree.png"
+    alt: "service icon"
+    heading: "Tree Planting"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service6:
+    icon: "assets/images/service/rubbish.png"
+    alt: "service icon"
+    heading: "Rubbish Removal"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+
+service_four:
+  section:
+    heading: "Our Services"
+    description: "Why will you choose our <br> services?"
+  service1:
+    icon: "assets/images/service/landscape.png"
+    alt: "service icon"
+    heading: "Landscape Design"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service2:
+    icon: "assets/images/service/growing.png"
+    alt: "service icon"
+    heading: "Plant Growing"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"
+  service3:
+    icon: "assets/images/service/harvest.png"
+    alt: "service icon"
+    heading: "Branch Cutting"
+    description: "There are many variations of passages the majority have suffered alteration form."
+    button:
+      label: "Read More"
+      url: "/service-details"

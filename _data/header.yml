@@ -1,0 +1,94 @@
+header_top:
+  number:
+    label: "(+021) 157 489"
+    url: "+021157489"
+  open_hour: "Mon-Fri 08:00 - 15:00" 
+  social:
+    - label: "Facebook"
+      url: "https://fb.com"
+
+    - label: "Twitter"
+      url: "https://twitter.com"
+
+    - label: "Instagram"
+      url: "https://instagram.com"
+
+logo:
+    image: "assets/images/logo.png"
+    alt: "Logo"
+    url: "/"
+
+navigation:
+  - label: "Home"
+    url: "/"
+    submenu:
+      - label: "Home 1"
+        url: "/"
+
+      - label: "Home 2"
+        url: "/home-two"
+
+      - label: "Home 3"
+        url: "/home-three"
+  
+  - label: "About"
+    url: "/about"
+
+  - label: "Services"
+    url: "#"
+    submenu:
+      - label: "Service 1"
+        url: "/service-one"
+
+      - label: "Service 2"
+        url: "/service-two"
+
+      - label: "Service Details"
+        url: "/service-details"
+
+  - label: "Page"
+    url: "#"
+    submenu:
+      - label: "Project 1"
+        url: "/project-one"
+
+      - label: "Project 2"
+        url: "/project-two"
+
+      - label: "Project Details"
+        url: "/project-details"
+
+      - label: "Team"
+        url: "/team"
+
+      - label: "Gallery"
+        url: "/gallery"
+
+      - label: "Pricing"
+        url: "/pricing"
+
+      - label: "FAQ"
+        url: "/faq"
+
+      - label: "404"
+        url: "/404"
+
+  - label: "Blog"
+    url: "#"
+    submenu:
+      - label: "Blog"
+        url: "/blog"
+
+      - label: "Blog Details"
+        url: "/complete-solution-for-your-land-and-garden-design"
+
+  - label: "Contact"
+    url: "/contact"
+
+button:
+  button_one:
+    label: "Get a Quote"
+    url: "/contact"
+  button_two:
+    label: "+88 015848651"
+    url: "+88015848651"

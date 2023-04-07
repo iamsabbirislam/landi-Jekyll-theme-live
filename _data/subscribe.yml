@@ -1,0 +1,5 @@
+subscribe_one:
+  image: "assets/images/subscribe.jpg"
+  heading: "Get News Updates Special Event Notices And <br> More When You Join Our Email List"
+  form_action: "https://authoritydesigns.us12.list-manage.com/subscribe/post?u=aa0517e4013cd8448c0d64c04&amp;id=d9e043358c&amp;f_id=00abb7e0f0"
+  button_label: "Subscribe"

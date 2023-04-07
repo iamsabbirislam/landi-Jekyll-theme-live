@@ -1,0 +1,96 @@
+testimonial_one:
+  section:
+    heading: "Happy Customers"
+    description: "What Our Customer Says <br> About Our Services"
+  testimonial1:
+    photo: "assets/images/testimonial/1.jpg"
+    alt: "Testimonial"
+    name: "Nicolas Murka"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial2:
+    photo: "assets/images/testimonial/2.jpg"
+    alt: "Testimonial"
+    name: "Nutrian Murka"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial3:
+    photo: "assets/images/testimonial/3.jpg"
+    alt: "Testimonial"
+    name: "Arnold Niditsch"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial4:
+    photo: "assets/images/testimonial/4.jpg"
+    alt: "Testimonial"
+    name: "Juliana Lane"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial5:
+    photo: "assets/images/testimonial/5.jpg"
+    alt: "Testimonial"
+    name: "Nicolas Murka"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial6:
+    photo: "assets/images/testimonial/6.jpg"
+    alt: "Testimonial"
+    name: "Nafisa Sabrin"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+  testimonial7:
+    photo: "assets/images/testimonial/7.jpg"
+    alt: "Testimonial"
+    name: "Jonathan Smith"
+    position: "CEO, Jupiter"
+    comment: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur dolores ratione voluptatem"
+
+testimonial_two:
+  section:
+    heading: "Happy Customer"
+    description: "What Our Customer Says <br> About Our Services"
+    image: "assets/images/testimonial/testimonial-1.png"
+    alt: "Testimonial"
+  testimonial1:
+    name: "Aynal hoque"
+    position: "CEO, Black Forest"
+    comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered humour, or randomised words which don't look even slightly believable. If you are going to use a passage need of the sure."
+  testimonial2:
+    name: "Mokadesh Chowdhury"
+    position: "CEO, Najowa Garden"
+    comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered humour, or randomised words which don't look even slightly believable. If you are going to use a passage need of the sure."
+  testimonial3:
+    name: "Raihan Khan"
+    position: "CEO, Fast Garden"
+    comment: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered humour, or randomised words which don't look even slightly believable. If you are going to use a passage need of the sure."
+
+testimonial_three:
+  column1:
+    image: "assets/images/testimonial/testimonial-2.png"
+    alt: "Testimonial"
+  column2:
+    heading: "Satisfied Users Over The Globe"
+    slider:
+      - content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that
+                            are bound to ensue; and equal blame belongs to those who fail in their duty through will."
+
+      - content: "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;
+                            and equal blame belongs to those who fail in their duty through will."
+
+      - content: "Denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;
+                            and equal blame belongs to those who fail in their duty through will."
+    slider_box:
+      - image: "assets/images/testimonial/2.jpg"
+        alt: "Testimonial"
+        name: "John Deo"
+        profession: "Enterpreneur"
+      
+      - image: "assets/images/testimonial/4.jpg"
+        alt: "Testimonial"
+        name: "John Deo"
+        profession: "Enterpreneur"
+      
+      - image: "assets/images/testimonial/5.jpg"
+        alt: "Testimonial"
+        name: "John Deo"
+        profession: "Enterpreneur"

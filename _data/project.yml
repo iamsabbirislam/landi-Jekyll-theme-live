@@ -1,0 +1,210 @@
+project_one:
+  section:
+    heading: "Our Project"
+    description: "We have done more than 534+ <br> successful projects"
+    button:
+      label: "More Project"
+      link: "/project-one"
+  project1:
+    image: "assets/images/project/garden-care.jpg"
+    heading: "Garden Care"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    link: "/project-details"
+  project2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    link: "/project-details"
+  project3:
+    image: "assets/images/project/branch-cutting.jpg"
+    heading: "Branch Cutting"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    link: "/project-details"
+
+project_two:
+  section:
+    heading: "Our Projects"
+    description: "Our Successful Projects"
+  project1:
+    image: "assets/images/project/landscape-design.jpg"
+    heading: "Landscape Design"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+  project2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+  project3:
+    image: "assets/images/project/watering.jpg"
+    heading: "Watering"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+
+project_three:
+  section:
+    heading: "Our Projects"
+    description: "We have done more than 534+ <br> successful projects"
+    button:
+      label: "More Project"
+      url: "/project-one"
+  project1:
+    image: "assets/images/project/landscape-design.jpg"
+    heading: "Landscape Design"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+  project2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+  project3:
+    image: "assets/images/project/watering.jpg"
+    heading: "Watering"
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"
+    button:
+      label: "Read More"
+      url: "/project-details"
+
+project_four:
+  section:
+    heading: "Our Project"
+    description: "We have done more than 534+ <br> successful projects"
+    button:
+      label: "More Project"
+      url: "/project-one"
+  project1:
+    image: "assets/images/project/garden-care.jpg"
+    heading: "Garden Care"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+  project2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+  project3:
+    image: "assets/images/project/watering.jpg"
+    heading: "Watering"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+  project4:
+    image: "assets/images/project/commercial-gardening.jpg"
+    heading: "Commercial Gardening"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+  project5:
+    image: "assets/images/project/outdoor-scaping.jpg"
+    heading: "Outdoor Scaping"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+  project6:
+    image: "assets/images/project/branch-cutting.jpg"
+    heading: "Branch Cutting"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    url: "/project-details"
+
+project_five:
+  section:
+    heading: "Our Projects"
+    description: "Our Successful Projects"
+  filter:
+    filter1:
+      label: "All"
+    filter2:
+      label: "Lawn Care"
+      tag: "lawn"
+    filter3:
+      label: "Video Gallery"
+      tag: "video"
+    filter4:
+      label: "Garden Care"
+      tag: "garden"
+    filter5:
+      label: "Planting"
+      tag: "planting"
+    filter6:
+      label: "Snow Removal"
+      tag: "snow"
+  project1:
+    image: "assets/images/project/landscape-design.jpg"
+    heading: "Landscape Design"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "planting"
+  project2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "lawn"
+  project3:
+    image: "assets/images/project/watering.jpg"
+    heading: "Watering"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "video"
+  project4:
+    image: "assets/images/project/plant-growing.jpg"
+    heading: "Plant Growing"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "planting"
+  project5:
+    image: "assets/images/project/garden-care.jpg"
+    heading: "Garden Care"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "lawn"
+  project6:
+    image: "assets/images/project/flower-scaping.jpg"
+    heading: "Flower Scaping"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "snow"
+  project7:
+    image: "assets/images/project/commercial-gardening.jpg"
+    heading: "Commercial Gardening"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "video"
+  project8:
+    image: "assets/images/project/outdoor-scaping.jpg"
+    heading: "Outdoor Scaping"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "garden"
+  project9:
+    image: "assets/images/project/outdoor-scaping.jpg"
+    heading: "Branch Cutting"
+    description: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime"
+    button:
+      label: "Read More"
+      url: "/project-details"
+    tag: "garden"

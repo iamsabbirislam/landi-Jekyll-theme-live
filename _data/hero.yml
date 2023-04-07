@@ -1,0 +1,71 @@
+hero_one:
+  image1: "assets/images/hero.jpg"
+  overlay_color: "black"
+  opacity: 7
+  heading: "Welcome to Our Perfect Solution Landscape."
+  description: "We are certified company. We provide best Landscaping services for you & your company ."
+  button:
+    label: "Our Solution"
+    link: "/content"
+  image2: assets/images/hero/1.png
+  alt: hero
+  videolink: http://www.youtube.com/watch?v=0O2aH4XLbto
+  
+hero_two:
+  slider1:
+    image: "assets/images/hero/1.jpg"
+    heading: "Welcome to Our <br>Perfect Solution <br> Landscape."
+    description: "We are certified company. We provide best Landscaping services <br> for you & your company ."
+    button:
+      label: "Our Solution"
+      url: "/contact"
+  slider2:
+    image: assets/images/hero/2.jpg
+    heading: "Expert Gardening <br> Service You Can <br> Trust."
+    description: "We are certified company. We provide best Landscaping services <br> for you & your company ."
+    button:
+      label: "Our Solution"
+      url: "/contact"
+
+hero_three:
+  slider1:
+    image: "assets/images/hero/3.jpg"
+    heading: "Wellcome To Our <br> Landscap & Gardening <br> Solutions."
+    description: "Landscape and Garden has been a presence on the international market since 2000 and is part of our strong values for a forward thinking subject company"
+    button:
+      label: "Our Solution"
+      url: "/contact"
+  slider2:
+    image: "assets/images/hero/2.jpg"
+    heading: "Wellcome To Our <br> Landscap & Gardening <br> Solutions."
+    description: "Landscape and Garden has been a presence on the international market since 2000 and is part of our strong values for a forward thinking subject company"
+    button:
+      label: "Our Solution"
+      url: "/contact"
+  slider3:
+    image: "assets/images/hero/1.jpg"
+    heading: "Wellcome To Our <br> Landscap & Gardening <br> Solutions."
+    description: "Landscape and Garden has been a presence on the international market since 2000 and is part of our strong values for a forward thinking subject company"
+    button:
+      label: "Our Solution"
+      url: "/contact"
+  slider4:
+    image: "assets/images/hero/3.jpg"
+    heading: "Wellcome To Our <br> Landscap & Gardening <br> Solutions."
+    description: "Landscape and Garden has been a presence on the international market since 2000 and is part of our strong values for a forward thinking subject company"
+    button:
+      label: "Our Solution"
+      url: "/contact"
+  slider_box:
+    slider1: 
+      subheading: "Step 1"
+      heading: "There are many variations of passages of Lorem Ipsum available."
+    slider2: 
+      subheading: "Step 2"
+      heading: "There are many variations of passages of Lorem Ipsum available."
+    slider3: 
+      subheading: "Step 3"
+      heading: "There are many variations of passages of Lorem Ipsum available."
+    slider4: 
+      subheading: "Step 4"
+      heading: "There are many variations of passages of Lorem Ipsum available."

@@ -1,0 +1,27 @@
+cta_one:
+  heading: "Need Gardening advice? Ask our experts for free. Glad to help you!"
+  button:
+    label: "Learn More"
+    url: "/contact"
+
+cta_two:
+  subheading: "The Company"
+  heading: "We invested our hard work for people just like you that <br> insist on a great user experience."
+  description: "Schedule a free case evalution .or call us at +123 565 788"
+  button:
+    label: "More Project"
+    url: "/contact"
+
+cta_three:
+  subheading: "Get a Professional Services,"
+  heading: "Call us Now."
+  number:
+    label: "123 789 654"
+    url: "+123789654"
+
+cta_four:
+  heading: "A Complete Solution For Your Gardening & <br> Landscape Service"
+  image: "assets/images/icon/cta.png"
+  button:
+    label: "MORE SERVICES"
+    url: "/contact"

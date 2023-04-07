@@ -1,0 +1,70 @@
+gallery_one:
+  section:
+    heading: "Our Projects"
+    description: "Our Successful Projects"
+  filter:
+    filter1:
+      label: "All"
+    filter2:
+      label: "Lawn Care"
+      tag: "lawn"
+    filter3:
+      label: "Video Gallery"
+      tag: "video"
+    filter4:
+      label: "Garden Care"
+      tag: "garden"
+    filter5:
+      label: "Planting"
+      tag: "planting"
+    filter6:
+      label: "Snow Removal"
+      tag: "snow"
+  gallery1:
+    image: "assets/images/project/landscape-design.jpg"
+    heading: "Landscape Design"
+    url: "/project-details"
+  gallery2:
+    image: "assets/images/project/tree-plantation.jpg"
+    heading: "Tree Plantation"
+    url: "/project-details"
+  gallery3:
+    image: "assets/images/project/watering.jpg"
+    heading: "Watering"
+    url: "/project-details"
+  gallery4:
+    image: "assets/images/project/plant-growing.jpg"
+    heading: "Plant Growing"
+    url: "/project-details"
+  gallery5:
+    image: "assets/images/project/garden-care.jpg"
+    heading: "Garden Care"
+    url: "/project-details"
+  gallery6:
+    image: "assets/images/project/flower-scaping.jpg"
+    heading: "Flower Scaping"
+    url: "/project-details"
+  gallery7:
+    image: "assets/images/project/commercial-gardening.jpg"
+    heading: "Commercial Gardening"
+    url: "/project-details"
+  gallery8:
+    image: "assets/images/project/outdoor-scaping.jpg"
+    heading: "Outdoor Scaping"
+    url: "/project-details"
+  gallery9:
+    image: "assets/images/project/branch-cutting.jpg"
+    heading: "Branch Cutting"
+    url: "/project-details"
+  gallery10:
+    image: "assets/images/project/p1.jpg"
+    heading: "Scaping"
+    url: "/project-details"
+  gallery11:
+    image: "assets/images/project/p2.jpg"
+    heading: "Cutting"
+    url: "/project-details"
+  gallery12:
+    image: "assets/images/project/p3.jpg"
+    heading: "Commercial Gardening"
+    url: "/project-details"

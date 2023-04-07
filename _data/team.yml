@@ -1,0 +1,131 @@
+team_one:
+  section:
+    heading: "Team Members"
+    description: "Dedicated Members 20+"
+  button:
+    label: "Learn More"
+    url: "/contact"
+  team1:
+    image: "assets/images/team/1.png"
+    alt: "Team"
+    name: "Nicolas Murkari"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+  team2:
+    image: "assets/images/team/2.png"
+    alt: "Team"
+    name: "Meri Sheraia"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+  team3:
+    image: "assets/images/team/3.png"
+    alt: "Team"
+    name: "Nicolas Murkari"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+
+team_two:
+  section:
+    heading: "Team Members"
+    description: "Dedicated Members 20+"
+  team1:
+    image: "assets/images/team/st-1.jpg"
+    alt: "Team"
+    name: "Meri Sheraia"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+  team2:
+    image: "assets/images/team/st-2.jpg"
+    alt: "Team"
+    name: "Nicolas Murkari"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+  team3:
+    image: "assets/images/team/st-3.jpg"
+    alt: "Team"
+    name: "Parvin Neloy"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"
+  team4:
+    image: "assets/images/team/st-4.jpg"
+    alt: "Team"
+    name: "Nicolas Murkari"
+    position: "Gardener"
+    social: 
+      - icon: fab fa-facebook-f
+        url: "https://fb.com"
+      
+      - icon: fab fa-twitter
+        url: "https://twitter.com"
+      
+      - icon: fab fa-instagram
+        url: "https://instagram.com"
+      
+      - icon: fab fa-pinterest-p
+        url: "https://pinterest.com"

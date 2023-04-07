@@ -1,0 +1,12 @@
+appointment_one:
+  section:
+    image: "assets/images/appointment.jpg"
+    heading: "Book an Appoinment"
+    description: "Get a Free Quote From <br> Our Experts"
+
+appointment_two:
+  section:
+    image: "assets/images/quote-bg.jpg"
+    heading: "Get <br> A Free Quote From Our Experts"
+    description: "Our experts ready to serve you for any kind of architectural releted question."
+    form_heading: "Need to Make an Equiry?"

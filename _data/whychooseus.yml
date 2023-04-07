@@ -1,0 +1,24 @@
+why_choose_us_one:
+  section:
+    heading: Why Choose US
+    description: Experience the Ultimate Level of <br> Landscape Power
+  why_choose_us1:
+    icon: assets/images/why-choose-us/estimates.png
+    alt: Why Choose Us One
+    heading: Free Estimates
+    description: There are many variations of passages the majority have suffered alteration form
+  why_choose_us2:
+    icon: assets/images/why-choose-us/equipment.png
+    alt: Why Choose Us Two
+    heading: Modern Equipment
+    description: There are many variations of passages the majority have suffered alteration form
+  why_choose_us3:
+    icon: assets/images/why-choose-us/work.png
+    alt: Why Choose Us Three
+    heading: Quality Work
+    description: There are many variations of passages the majority have suffered alteration form
+  why_choose_us4:
+    icon: assets/images/why-choose-us/irreigation.png
+    alt: Why Choose Us Four
+    heading: Watering & Irrigation
+    description: There are many variations of passages the majority have suffered alteration form

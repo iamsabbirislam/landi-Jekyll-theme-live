@@ -1,0 +1,21 @@
+feature_one:
+  column1:
+    icon: "assets/images/icon/satisfaction-guarantee.png"
+    alt: "Feature"
+    heading: "Satisfaction Guarantee"
+    description: "There are many variations of passages majority have suffered alteration in some form, by"
+  column2:
+    icon: "assets/images/icon/professional-team.png"
+    alt: "Feature"
+    heading: "Professional Team"
+    description: "There are many variations of passages majority have suffered alteration in some form, by"
+  column3:
+    icon: "assets/images/icon/material-instrument.png"
+    alt: "Feature"
+    heading: "Material Instrument"
+    description: "There are many variations of passages majority have suffered alteration in some form, by"
+  column4:
+    icon: "assets/images/icon/experience.png"
+    alt: "Feature"
+    heading: "20 Years Experience"
+    description: "There are many variations of passages majority have suffered alteration in some form, by"

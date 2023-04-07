@@ -1,0 +1,154 @@
+footer_one:
+  column1:
+    heading: "Contact Us"
+    description: "If you have any questions or need help, feel free to contact with our team."
+    number1:
+      label: "(111) 0909 8787 666"
+      url: "+11109098787666"
+    location: "House #253, 3rd Floor, Uposhohor 6202, Rajshahi, Bangladesh"
+    number2:
+      label: "Get Directions"
+      url: "+11109098787666"
+    form_action: "https://formspree.io/f/myyanjkd"
+  column2:
+    heading: "Quick Links"
+    menu: 
+      - label: "Contact Us"
+        url: "/contact"
+
+      - label: "Team"
+        url: "/team"
+
+      - label: "Our Services"
+        url: "/service-one"
+
+      - label: "Our Project"
+        url: "/project-one"
+
+      - label: "About Company"
+        url: "/about"
+
+      - label: "News Update"
+        url: "/blog"
+  column3:
+    heading: "Our Services"
+    menu: 
+      - label: "Landscaping"
+        url: "/service-details"
+
+      - label: "Plant Growing"
+        url: "/service-details"
+
+      - label: "Branch Cutting"
+        url: "/service-details"
+
+      - label: "Flower Scaping"
+        url: "/service-details"
+
+      - label: "Tree Planting"
+        url: "/service-details"
+
+      - label: "Rubbish Removal"
+        url: "/service-details"
+  column4:
+    heading: "Newsletter"
+    description: "Established since 2000. Mission Eland Landscaping Company in US."
+    social_label: "Follow Us:"
+    social: 
+      - icon: "fab fa-facebook-f"
+        url: "https://fb.com"
+      
+      - icon: "fab fa-twitter"
+        url: "https://twitter.com"
+      
+      - icon: "fab fa-instagram"
+        url: "https://instagram.com"
+      
+      - icon: "fab fa-pinterest-p"
+        url: "https://pinterest.com"
+
+footer_two:
+  section:
+    image: "assets/images/footer-1.png"
+  column1:
+    heading: "About Landi"
+    description: "Landi HTML Template is build for Lawn, Landscaping, Garden Ground skeepers, Landscape, Gardening Shops, & other lawn and landscaping related services."
+    number:
+      label: "(111) 0909 8787 666"
+      url: "+11109098787666"
+    social_label: "Follow Us:"
+    social: 
+      - icon: "fab fa-facebook-f"
+        url: "https://fb.com"
+      
+      - icon: "fab fa-twitter"
+        url: "https://twitter.com"
+      
+      - icon: "fab fa-instagram"
+        url: "https://instagram.com"
+      
+      - icon: "fab fa-pinterest-p"
+        url: "https://pinterest.com"
+    location: "House #253, 3rd Floor, Uposhohor 6202, Rajshahi, Bangladesh"
+  column2:
+    heading: "Quick Links"
+    menu: 
+      - label: "Contact Us"
+        url: "/contact"
+
+      - label: "Team"
+        url: "/team"
+
+      - label: "Our Services"
+        url: "/service-one"
+
+      - label: "Our Project"
+        url: "/project-one"
+
+      - label: "About Company"
+        url: "/about"
+
+      - label: "News Update"
+        url: "/blog"
+  column3:
+    heading: "Our Services"
+    menu: 
+      - label: "Landscaping"
+        url: "/service-details"
+
+      - label: "Plant Growing"
+        url: "/service-details"
+
+      - label: "Branch Cutting"
+        url: "/service-details"
+
+      - label: "Flower Scaping"
+        url: "/service-details"
+
+      - label: "Tree Planting"
+        url: "/service-details"
+
+      - label: "Rubbish Removal"
+        url: "/service-details"
+  column4:
+    heading: "Contact us"
+    description: "Established since 2000. Mission Eland Landscaping Company in US."
+    number:
+      label: "+62 351 154874"
+      url: "+62351154874"
+    email:
+      label: "landi@gmail.com"
+      url: "landi@gmail.com"
+    location: "House #253, 3rd Floor, Uposhohor 6202, Rajshahi, Bangladesh"
+
+footer_bottom:
+  copyright: "© 2022 Landi. All right reserved."
+  menu: 
+    - label: "About Landi"
+      url: "/about"
+
+    - label: "Careers"
+      url: "/contact"
+
+    - label: "Privacy Policy"
+      url: "/faq"

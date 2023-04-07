@@ -1,0 +1,69 @@
+pricing_one:
+  section:
+    subheading: "Our Pricing"
+    heading: "Affordable Pricing Plans"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  pricing1:
+    price: "$85"
+    heading: "Essentials Plan"
+    button:
+      label: "Get Started"
+      url: "/contact"
+    list: 
+      - icon: "fas fa-check"
+        content: "Garden Arrangement"
+
+      - icon: "fas fa-check"
+        content: "Maintenance Service"
+
+      - icon: "fas fa-check"
+        content: "Professional Staff"
+
+      - icon: "fas fa-check"
+        content: "30 Day Warranty"
+
+      - icon: "fas fa-check"
+        content: "24/7 Support"
+  pricing2:
+    price: "$85"
+    heading: "Essentials Plan"
+    button:
+      label: "Get Started"
+      url: "/contact"
+    list: 
+      - icon: "fas fa-check"
+        content: "Garden Arrangement"
+
+      - icon: "fas fa-check"
+        content: "Maintenance Service"
+
+      - icon: "fas fa-check"
+        content: "Professional Staff"
+
+      - icon: "fas fa-check"
+        content: "30 Day Warranty"
+
+      - icon: "fas fa-check"
+        content: "24/7 Support"
+  pricing3:
+    price: "$85"
+    heading: "Essentials Plan"
+    button:
+      label: "Get Started"
+      url: "/contact"
+    list: 
+      - icon: "fas fa-check"
+        content: "Garden Arrangement"
+
+      - icon: "fas fa-check"
+        content: "Maintenance Service"
+
+      - icon: "fas fa-check"
+        content: "Professional Staff"
+
+      - icon: "fas fa-check"
+        content: "30 Day Warranty"
+
+      - icon: "fas fa-check"
+        content: "24/7 Support"
+    

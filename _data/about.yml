@@ -1,0 +1,60 @@
+about_one:
+  subheading: "Our Services"
+  heading: "We Are Right Landscape And Gardening Experts Since 2000"
+  button:
+    label: "Appointment"
+    link: "/contact"
+  image1: 
+    image: "assets/images/about/1.jpg"
+    alt: "About Us"
+  image2: 
+    image: "assets/images/about/2.jpg"
+    alt: "About Us"
+
+about_two:
+  column1:
+    image: "assets/images/about/about-3.jpg"
+    heading: "We Are Since 2000! Over 200 Awards"
+  column2:
+    image: "assets/images/about/about-3.jpg"
+    subheading: "We are Committed to Landscape Service"
+    heading: "20 years we resarch or how to growth Garden & Landscap Systems"
+    description: "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                    <br><br> Combined with a handful of model sentence structures, Lorem Ipsum The generated Lorem Ipsum is therefore always free from repetition, injected humour, "
+    button:
+      label: "Appointment"
+      url: "/contact"
+
+about_three:
+  column1:
+    image1: "assets/images/about/about-large.jpg"
+    alt1: "About"
+    image2: "assets/images/about/about-small.jpg"
+    alt1: "About"
+    subheading: "20+"
+    heading: "Years Of <br> Experiences"
+  column2:
+    subheading: "About Landi"
+    heading: "We Have 20 Years of Experience in Garden & Landscape Service"
+    description: "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. Combined with a handful of model sentence structures,"
+    button:
+      label: "Read More"
+      url: "/contact"
+    author:
+      image: "assets/images/about/about-author-avatar.jpg"
+      alt: "Author"
+      name: "Nicolas Jurgan"
+      position: "Founder Landscape"
+
+about_four:
+  column1:
+    heading: "Why will you choose our <br> Garden and Landscape <br> services"
+    description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    <br> <br> The cites of the word in classical literature, discovered the undoubtable source. the Lorem Ipsum comes from sections."
+    button:
+      label: "appointment"
+      url: "/contact"
+  column2:
+    image: "assets/images/hero/1.png"
+    alt: "About"
+    video_url: "http://www.youtube.com/watch?v=0O2aH4XLbto"

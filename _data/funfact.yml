@@ -1,0 +1,17 @@
+fun_fact_one:
+  column1:
+    number: "5"
+    percent: "K+"
+    heading: "Completed Projects"
+  column2:
+    number: "25"
+    percent: "+"
+    heading: "Expert Landscape"
+  column3:
+    number: "150"
+    percent: "+"
+    heading: "Awards Winning"
+  column4:
+    number: "100"
+    percent: "%"
+    heading: "Client Satisfaction"
