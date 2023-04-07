@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+{% include common/header-two.html %}
+{% include common/breadcrumb.html title="Blog List"  subtitle="We are available for 24/7 for Garden & Landscaping Services" currentpage="Blog List" %}
+
+<div class="blog-list pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 pr-50">
+                <div class="row">
+                    {% for post in paginator.posts %}
+                        <div class="col-xl-12">
+                            <div class="single-blog-wrapper mb-60 border-bottom-1 wow fadeInUp" data-wow-delay=".3s">
+                                {% if post.image %}
+                                <div class="blog-img">
+                                    <img src="{{post.image | relative_url}}" class="img-fluid" alt="{{ post.title }}">
+                                    <a href="{{post.url | relative_url}}"><i class="fas fa-plus"></i></a>
+                                </div>
+                                {% endif %}
+                                <div class="blog-content mb-60">
+                                    <ul class="cat-list mt-30 mb-20">
+                                        {% for category in site.categories %}
+                                            <li><a href="#">{{ category[0] }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h2><a title="{{ post.title }}" href="{{post.url | relative_url}}">{{ post.title }}</a></h2>
+                                    <ul class="post-meta mb-25">
+                                        <li>{{ post.date | date: " %-d %B %Y" }}</li>
+                                        <li><span>By</span> <a href="#">{{ post.author_display }}</a></li>
+                                    </ul>
+                                    <p class="mb-35">{{ post.excerpt }}</p>
+                                    <a href="{{post.url | relative_url}}" class="l-btn cmk-button cmk-rotate-right mt-20">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% if paginator.total_pages > 1 %}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="landi-pagination mt-40">
+                                <ul>
+                                    {% if paginator.previous_page %}
+                                        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-angle-left"></i></a></li>
+                                    {% endif %}
+                                    {% for page in (1..paginator.total_pages) %}
+                                        {% if page == paginator.page %}
+                                            <li><span class="current">{{ page }}</span></li>
+                                        {% elsif page == 1 %}
+                                            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="current">{{ page }}</span></a></li>
+                                        {% else %}
+                                            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% if paginator.next_page %}
+                                        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-angle-right"></i></a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                {% include widgets/category.html %}
+                {% include widgets/latest-posts.html %}
+                {% include widgets/tags.html %}
+                {% include widgets/quote.html %}
+                {% include widgets/quote-form.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include common/subscribe.html %}
+{% include common/footer-two.html %}
