@@ -16,79 +16,79 @@ header_top:
 logo:
     image: "assets/images/logo.png"
     alt: "Logo"
-    url: "/"
+    url: "/landi-Jekyll-theme-live"
 
 navigation:
   - label: "Home"
-    url: "/"
+    url: "/landi-Jekyll-theme-live"
     submenu:
       - label: "Home 1"
-        url: "/"
+        url: "/landi-Jekyll-theme-live"
 
       - label: "Home 2"
-        url: "/home-two"
+        url: "/landi-Jekyll-theme-live/home-two"
 
       - label: "Home 3"
-        url: "/home-three"
+        url: "/landi-Jekyll-theme-live/home-three"
   
   - label: "About"
-    url: "/about"
+    url: "/landi-Jekyll-theme-live/about"
 
   - label: "Services"
     url: "#"
     submenu:
       - label: "Service 1"
-        url: "/service-one"
+        url: "/landi-Jekyll-theme-live/service-one"
 
       - label: "Service 2"
-        url: "/service-two"
+        url: "/landi-Jekyll-theme-live/service-two"
 
       - label: "Service Details"
-        url: "/service-details"
+        url: "/landi-Jekyll-theme-live/service-details"
 
   - label: "Page"
     url: "#"
     submenu:
       - label: "Project 1"
-        url: "/project-one"
+        url: "/landi-Jekyll-theme-live/project-one"
 
       - label: "Project 2"
-        url: "/project-two"
+        url: "/landi-Jekyll-theme-live/project-two"
 
       - label: "Project Details"
-        url: "/project-details"
+        url: "/landi-Jekyll-theme-live/project-details"
 
       - label: "Team"
-        url: "/team"
+        url: "/landi-Jekyll-theme-live/team"
 
       - label: "Gallery"
-        url: "/gallery"
+        url: "/landi-Jekyll-theme-live/gallery"
 
       - label: "Pricing"
-        url: "/pricing"
+        url: "/landi-Jekyll-theme-live/pricing"
 
       - label: "FAQ"
-        url: "/faq"
+        url: "/landi-Jekyll-theme-live/faq"
 
       - label: "404"
-        url: "/404"
+        url: "/landi-Jekyll-theme-live/404"
 
   - label: "Blog"
     url: "#"
     submenu:
       - label: "Blog"
-        url: "/blog"
+        url: "/landi-Jekyll-theme-live/blog"
 
       - label: "Blog Details"
-        url: "/complete-solution-for-your-land-and-garden-design"
+        url: "/landi-Jekyll-theme-live/complete-solution-for-your-land-and-garden-design"
 
   - label: "Contact"
-    url: "/contact"
+    url: "/landi-Jekyll-theme-live/contact"
 
 button:
   button_one:
     label: "Get a Quote"
-    url: "/contact"
+    url: "/landi-Jekyll-theme-live/contact"
   button_two:
     label: "+88 015848651"
     url: "+88015848651"

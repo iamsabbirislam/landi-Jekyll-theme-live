@@ -19,7 +19,7 @@ paginate: 7
 
 # Blog path
 paginate_path: "/blog/:num/"
-permalink: /:basename/
+permalink: /:title/
 
 # Tags
 tag_page_dir: tag
