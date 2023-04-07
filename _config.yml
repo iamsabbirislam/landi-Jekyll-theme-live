@@ -9,7 +9,7 @@ title: Landi
 description: Landscape Gardening Jekyll Theme.
 
 # Site base hostname & protocol, e.g. http://example.com
-url: ''
+url: 'iamsabbirislam.github.io'
 
 # Site subpath, e.g. /blog
 baseurl: "/landi-Jekyll-theme-live"
