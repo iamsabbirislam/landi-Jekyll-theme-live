@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% assign author = site.authors[page.author] %}
+
+{% include common/header-two.html %}
+
+<div class="breadcrumb-area pt-160 pb-160 bg-property" data-overlay="black" data-opacity="7" data-background="{{ "assets/images/breadcrumb/1.jpg" | relative_url }}">
+  <div class="container custom-container-1">
+      <div class="row">
+          <div class="col-xl-12 justify-content-center">
+              <div class="breadcrumb-content-wrapper text-center">
+                  <h2>Tags: {{ page.tag }}</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="blog-list pt-110 pb-110">
+  <div class="container custom-container-1">
+      <div class="row">
+          <div class="col-xl-8 col-lg-8 col-md-12 pr-50">
+              <div class="row">
+                {% for post in page.posts %}
+                  {% include blog/blog-three.html %}
+                {% endfor %}
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12">
+              {% include widgets/category.html %}
+              {% include widgets/latest-posts.html %}
+              {% include widgets/tags.html %}
+              {% include widgets/quote.html %}
+              {% include widgets/quote-form.html %}
+          </div>
+      </div>
+  </div>
+</div>
+
+{% include common/subscribe.html %}
+{% include common/footer-two.html %}

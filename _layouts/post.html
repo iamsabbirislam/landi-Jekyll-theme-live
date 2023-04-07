@@ -1,0 +1,76 @@
+---
+layout: default
+comments: true
+---
+
+{% include common/header-two.html %}
+{% assign author = site.authors[page.author] %}
+
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area pt-160 pb-160 bg-property" data-overlay="black" data-opacity="7" data-background="{{page.breadcrumb_img | relative_url}}">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-12 justify-content-center">
+                <div class="breadcrumb-content-wrapper text-center">
+                    <h2>{{page.title}}</h2>
+                    <ul class="post-meta">
+                        <li>{{ page.date | date: " %-d %B %Y" }}</li>
+                        <li><span>By</span> <a href="#">{{ author.name }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Blog Details Start -->
+<div class="blog-details-area pt-110 pb-110">
+    <div class="container custom-container-1">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 pr-50">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="blog-details pb-60 mb-60 border-bottom-1 wow fadeInUp" data-wow-delay=".3s">
+                            {% if page.image %}
+                                <img class="img-fluid mb-30" src="{{page.image | relative_url}}" alt="">
+                            {% endif %}
+                            
+                            {{content}}
+                            
+                            <div class="row mt-50">
+                                <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                                    {% include blog/tags.html %}
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 text-end">
+                                    {% include blog/blog-share.html %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% include blog/post-navigation.html %}
+
+                {% if page.author %}
+                    {% include blog/author.html %}
+                {% endif %}
+                
+                {% if site.disqus.shortname %}
+                    {% include blog/disqus-comments.html %}
+                {% endif %}
+            </div>
+            <div class="col-xl-4 col-lg-4">
+                {% include widgets/category.html %}
+                {% include widgets/latest-posts.html %}
+                {% include widgets/tags.html %}
+                {% include widgets/quote.html %}
+                {% include widgets/quote-form.html %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog Details End -->
+
+{% include common/subscribe.html %}
+{% include common/footer-two.html %}
